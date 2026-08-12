@@ -45,15 +45,15 @@
   "evidence_files": [
     {
       "path": "raw/eudi-official-clone.log",
-      "sha256": "ea451dbb46355b6b41f516531c20f08a0222d1f89acc9468e81f5a410715eb4e"
+      "sha256": "b0f5541742a90d3d736fced5bea89bd66733971c99d15ed04cd596c145fa22d7"
     },
     {
       "path": "raw/eudi-official-test.log",
-      "sha256": "0c46d2600aefc99f39180854ad3e86fa6e58d4f03a63e2b4a61ffe9ed5558d12"
+      "sha256": "f1d87cfc17836345f26d2bfa66295706824465a5da05f68b610482dbb8f53b5c"
     },
     {
       "path": "raw/eudi-official-test.xml",
-      "sha256": "f67c26f6bc5484de628d1ea452ec29f001ed75ed753d04b93ed6a410703743cf"
+      "sha256": "6efa7f2a1a775e6d278d8b2030b56329065a3f5ba75fc2d983f0e4eec1722736"
     },
     {
       "path": "environment.json",
@@ -64,7 +64,7 @@
     "control": "tyche-controlled-local-run",
     "controller_identifier": "Tyche Institute local validation",
     "environment_sha256": "e5df06e725e8ef9f6c20d140dc51e3f66ec7caf1c8a11b68d712accef4770974",
-    "executed_at": "2026-08-12T10:06:00.740327+00:00",
+    "executed_at": "2026-08-12T14:35:14.884960+00:00",
     "independent_of_tyche": false,
     "relationship_to_tyche": "study author controlled the validation run"
   },
@@ -142,7 +142,7 @@
     }
   ],
   "policy_configuration_sha256": "65ffed9d399259f80a8d607909b37e5dbc001c00892072e88ea8ff122c341597",
-  "receipt_id": "urn:tyche:eudi:provenance:eudi-official:independent-return:2026-08-12T10:06:00.740327+00:00",
+  "receipt_id": "urn:tyche:eudi:provenance:eudi-official:independent-return:2026-08-12T14:35:14.884960+00:00",
   "record_status": "executed-observation",
   "repository": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
   "schema_version": "1.1.0-research-candidate",

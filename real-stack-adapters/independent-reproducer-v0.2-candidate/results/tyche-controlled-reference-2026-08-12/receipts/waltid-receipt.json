@@ -46,15 +46,15 @@
   "evidence_files": [
     {
       "path": "raw/waltid-clone.log",
-      "sha256": "69f624d2063a55a6ace9f78ce2edc7c4b6830ffede438056d471f7079b2c70d1"
+      "sha256": "b9cc689096bdaeabb0ac3091e33cc5b66aa347a685d86c4a6592b5d9290a8fb7"
     },
     {
       "path": "raw/waltid-test.log",
-      "sha256": "87b638fb3ee5defbc06749856a178c279949d48ce41e0714068181b9d70a84f7"
+      "sha256": "5aa2bd7bc6e35815a16a096fce569378918d8561d45e310e0deecf1eaa567a8f"
     },
     {
       "path": "raw/waltid-test.xml",
-      "sha256": "4da57f96964793a49f0d6225494a57687a3914f607328f790240d30990511509"
+      "sha256": "fb76ad2dd8a56f81016b78dd49ec8bee61bd8bacb7b58b7a87252d115a92e686"
     },
     {
       "path": "environment.json",
@@ -65,7 +65,7 @@
     "control": "tyche-controlled-local-run",
     "controller_identifier": "Tyche Institute local validation",
     "environment_sha256": "e5df06e725e8ef9f6c20d140dc51e3f66ec7caf1c8a11b68d712accef4770974",
-    "executed_at": "2026-08-12T10:06:00.740327+00:00",
+    "executed_at": "2026-08-12T14:35:14.884960+00:00",
     "independent_of_tyche": false,
     "relationship_to_tyche": "study author controlled the validation run"
   },
@@ -143,7 +143,7 @@
     }
   ],
   "policy_configuration_sha256": "6b6f1b884ffb26c3f4c8949b5d32e336c561d1a2f3438275638a94264c52d08b",
-  "receipt_id": "urn:tyche:eudi:provenance:waltid:independent-return:2026-08-12T10:06:00.740327+00:00",
+  "receipt_id": "urn:tyche:eudi:provenance:waltid:independent-return:2026-08-12T14:35:14.884960+00:00",
   "record_status": "executed-observation",
   "repository": "https://github.com/walt-id/waltid-identity",
   "schema_version": "1.1.0-research-candidate",

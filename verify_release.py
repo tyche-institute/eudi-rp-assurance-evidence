@@ -142,14 +142,14 @@ def main() -> int:
     }:
         raise SystemExit("FAIL: reference-return claim boundary changed")
     expected_image = (
-        "sha256:34d5c0307661638fb3afa70698ea25d8eb81dbd4345b88b78f0ecc73d75b6d44"
+        "sha256:6663ff8c0511c09567e7e17dd82eb6b6943056a8b230680650085add9d610f33"
     )
     if (REFERENCE_RETURN / "CONTAINER-IMAGE-ID").read_text(encoding="utf-8").strip() != expected_image:
         raise SystemExit("FAIL: reference container image ID changed")
 
     verify_privacy(actual)
     print(json.dumps({
-        "status": "PASS_RELEASE_CANDIDATE_V0_2_0_RC1",
+        "status": "PASS_PUBLIC_RELEASE_V0_2_0",
         "files": len(actual),
         "decision_scope_observations": 18,
         "reference_return_observations": 12,

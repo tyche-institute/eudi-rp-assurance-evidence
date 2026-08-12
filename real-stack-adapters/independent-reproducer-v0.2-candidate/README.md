@@ -1,6 +1,6 @@
-# Independent Reproducer Kit v0.2 candidate
+# Independent Reproducer Kit v0.2
 
-Status: **public draft release candidate; not tagged or released; independent executions remain zero**.
+Status: **released in evidence packet v0.2.0; independent executions remain zero**.
 
 This kit turns the decision-scope experiment into a low-friction return path for independently
 controlled evidence. It runs two pinned JVM verifier entry points in a clean container without an
@@ -14,7 +14,7 @@ Android SDK:
 The six compact inputs differ one property at a time: baseline, issuer signature, KB signature,
 nonce, audience and KB issuance time. Disclosure binding is excluded by the cross-project hold.
 
-The final Tyche-controlled clean-run and verifier-semantic checks are recorded in `VALIDATION.md`.
+The final release-image clean run and verifier-semantic checks are recorded in `VALIDATION.md`.
 
 ## One command
 
@@ -64,7 +64,7 @@ independence provenance and permission for public use are three separate decisio
 ## Why two paths
 
 The Multipaz JVM route remains in the broader packet, but the pinned repository configures Android
-projects during JVM task discovery. Omitting it here is deliberate: this candidate tests whether a
+projects during JVM task discovery. Omitting it here is deliberate: this kit tests whether a
 meaningful independent return can be obtained without requiring an Android SDK. It makes no claim
 that two paths represent the whole ecosystem.
 

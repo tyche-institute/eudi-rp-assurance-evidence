@@ -1,14 +1,14 @@
-# Validation record — Independent Reproducer Kit v0.2 candidate
+# Validation record — Independent Reproducer Kit v0.2
 
 - **Date:** 2026-08-12
-- **State:** public draft candidate; not tagged or released; independent executions = 0
+- **State:** final release-image validation; independent executions = 0
 
 ## Final clean run
 
 The documented one-command interface was executed with a new output directory:
 
 ```sh
-REPRO_OUTPUT_DIR="$PWD/results/final-clean-validation-2026-08-12" \
+REPRO_OUTPUT_DIR="$PWD/results/release-validation-2026-08-12" \
   ./run-one-command.sh
 ```
 
@@ -24,7 +24,7 @@ ran the two selected JVM entry points and verified the completed return package.
 | Independent run package | `false` |
 | Android SDK used | `false` |
 | Corpus SHA-256 | `30fab5ed86987c156480ce6f64b5f5fa7a489b289406fdaaab7178252ab661d9` |
-| Final image ID | `sha256:34d5c0307661638fb3afa70698ea25d8eb81dbd4345b88b78f0ecc73d75b6d44` |
+| Final image ID | `sha256:6663ff8c0511c09567e7e17dd82eb6b6943056a8b230680650085add9d610f33` |
 | Pinned base image | `eclipse-temurin@sha256:55fb9bf738f5d9b4a6c01b39337e3070d3e27370dd3c478fd1d5d3cd2233c6d8` |
 
 Every item in `RETURN-SHA256SUMS` passed, including the environment manifest, raw clone and test

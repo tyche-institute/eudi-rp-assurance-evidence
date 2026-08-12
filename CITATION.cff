@@ -1,8 +1,9 @@
 cff-version: 1.2.0
-message: "This is an unpublished draft release candidate; cite a tagged public release when available."
+message: "If you use this evidence packet, please cite it and the associated article."
 title: "EUDI RP Assurance Evidence"
 type: software
-version: 0.2.0-rc1
+version: 0.2.0
+date-released: 2026-08-12
 authors:
   - family-names: Sokolov
     given-names: Anton

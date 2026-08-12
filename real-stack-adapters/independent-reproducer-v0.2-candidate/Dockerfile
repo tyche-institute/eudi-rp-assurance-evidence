@@ -12,10 +12,10 @@ RUN python3 -m pip install --no-cache-dir \
       referencing==0.37.0 \
       rpds-py==0.30.0
 
-LABEL org.opencontainers.image.title="Tyche EUDI Independent Reproducer Kit v0.2 candidate" \
+LABEL org.opencontainers.image.title="Tyche EUDI Independent Reproducer Kit v0.2" \
       org.opencontainers.image.description="Two pinned JVM verifier entry points; no Android SDK" \
       org.opencontainers.image.source="https://github.com/tyche-institute/eudi-rp-assurance-evidence" \
-      org.opencontainers.image.version="0.2.0-research-candidate"
+      org.opencontainers.image.version="0.2.0"
 
 ENV TYCHE_REPRO_BASE_IMAGE="eclipse-temurin@sha256:55fb9bf738f5d9b4a6c01b39337e3070d3e27370dd3c478fd1d5d3cd2233c6d8" \
     LANG=C.UTF-8 \

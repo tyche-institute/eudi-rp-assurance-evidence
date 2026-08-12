@@ -1,12 +1,12 @@
-# EUDI RP Assurance Evidence v0.2.0-rc1
+# EUDI RP Assurance Evidence v0.2.0
 
-Status: **public draft release candidate; not tagged or released**.
+Status: **public release**.
 
 This packet makes relying-party decision scope and independently controlled
 reproduction first-class evidence. It extends the immutable public v0.1.2
 packet without changing its recorded files or claims.
 
-## New evidence in this candidate
+## New evidence in this release
 
 | Component | Recorded result | Boundary |
 |---|---:|---|
@@ -53,7 +53,7 @@ result and is labelled explicitly; it is not converted into a failed package.
 ## Recorded reference validation
 
 - Final local image ID:
-  `sha256:34d5c0307661638fb3afa70698ea25d8eb81dbd4345b88b78f0ecc73d75b6d44`.
+  `sha256:6663ff8c0511c09567e7e17dd82eb6b6943056a8b230680650085add9d610f33`.
 - Base image:
   `eclipse-temurin@sha256:55fb9bf738f5d9b4a6c01b39337e3070d3e27370dd3c478fd1d5d3cd2233c6d8`.
 - Pinned EC verifier endpoint commit:
@@ -65,7 +65,7 @@ result and is labelled explicitly; it is not converted into a failed package.
 
 ## Claim and privacy boundary
 
-- Independent executions recorded in this candidate: **0**.
+- Independent executions recorded in this release: **0**.
 - The reference run proves that the return mechanism works; it is not an
   independent reproduction.
 - The selected entry points do not have identical decision scope. ACCEPT

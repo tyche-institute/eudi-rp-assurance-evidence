@@ -3,7 +3,7 @@ set -euo pipefail
 
 kit_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 packet_dir="$(cd "$kit_dir/.." && pwd)"
-image_name="tyche/eudi-independent-reproducer:0.2.0-candidate"
+image_name="tyche/eudi-independent-reproducer:0.2.0"
 run_stamp="$(date -u +%Y%m%dT%H%M%SZ)"
 output_dir="${REPRO_OUTPUT_DIR:-$kit_dir/results/return-$run_stamp}"
 
