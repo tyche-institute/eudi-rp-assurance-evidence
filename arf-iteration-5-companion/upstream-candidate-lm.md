@@ -1,6 +1,11 @@
 # Draft contribution for ARF Topics L and M — lifecycle semantics
 
-Status: **prepared, not posted**
+Status: **adapted and posted as two non-duplicative comments on 2026-08-12**
+
+- Topic L: <https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/discussions/691#discussioncomment-17986586>
+- Topic M: <https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/discussions/692#discussioncomment-17986587>
+- The two public comments are the canonical posted texts; the internal submission record retains
+  their administrative copies.
 
 The current L/M paper and TS7 carefully describe the wallet-side event as initiation: the wallet
 opens an external browser, email client or phone application and records that initiation, while the
@@ -38,9 +43,9 @@ Questions for the refinement round:
 The linked packet is synthetic and privacy-minimised. It makes no claim about a named wallet, RP or
 DPA and does not decide entitlement to erasure or unlawfulness.
 
-## Publication gate
+## Publication gate — passed for the pinned-source contribution
 
-Post only after the release archive has a stable public URL, all links resolve, and any new
-Iteration 5 discussion paper has been diffed against the pinned 2026-08-12 sources. Do not post a
-second comment to Topic I; Tyche already contributed there on 2026-07-22.
-
+The comments were posted after the `v0.1.0` evidence release became public. They explicitly cite the
+pinned current TS7/L+M material and present lifecycle semantics as a research proposal. Any later
+Iteration 5 paper still requires a fresh diff before a follow-up. No second comment was posted to
+Topic I; Tyche already contributed there on 2026-07-22.

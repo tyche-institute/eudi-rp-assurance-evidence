@@ -1,5 +1,11 @@
 # Upstream candidate: one concrete RP-as-SUT issuer-authentication case
 
+Status: **posted 2026-08-12 as [FCAF issue #50](https://github.com/eu-digital-identity-wallet/eudi-doc-functional-conformance-assessment/issues/50)**
+
+Public evidence baseline: `tyche-institute/eudi-rp-assurance-evidence` tag `v0.1.0`
+
+The issue itself is the canonical public text; the internal submission record retains the exact administrative copy.
+
 Proposed title: **Discussion: concrete RP-as-SUT test case for invalid SD-JWT issuer signature**
 
 ## Draft issue body
@@ -38,8 +44,9 @@ three executions are Tyche-controlled, not independent reproductions. The
 full test specification and reproducible runner are available in the linked
 packet.
 
-## Publication gate
+## Publication gate — passed
 
-Do not post this draft until the repository URL for the public packet is
-stable and all linked files resolve. Do not attach the live survey roster,
-responses, personal data or private correspondence.
+The issue was posted only after the public repository and immutable `v0.1.0`
+release were available and the privacy-minimised archive passed clean-extraction
+verification. No live survey roster, response, personal data or private
+correspondence was attached.
