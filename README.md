@@ -81,4 +81,6 @@ The external build is intentionally not part of the fast verification path.
 
 ## License and citation
 
-Released under the MIT License; see `LICENSE`. Citation metadata are in `CITATION.cff`.
+Tyche-authored material is released under the MIT License; see `LICENSE`. Pinned upstream projects
+and limited derived test/build material are identified in `THIRD_PARTY-NOTICES.md`. Citation
+metadata are in `CITATION.cff`.
