@@ -1,0 +1,59 @@
+{
+  "adapter_id": "multipaz",
+  "baseline": {
+    "case_id": "COMMON-SDJWT-BASELINE-001",
+    "verdict": "ACCEPT"
+  },
+  "build_configuration_sha256": "92dc86658e2edf81fcd6d3121fa19182615fb82464fce9686454739a65b006cd",
+  "claim_boundary": "Pinned-stack execution of one synthetic common compact presentation and one isolated issuer-signature mutation. The run demonstrates the stated library/verifier decision at this commit and configuration; it is not an independent reproduction, full RP-service workflow, product certification, or EUDIW/FCAF conformance result.",
+  "dependency_material": {
+    "paths": [
+      "build.gradle.kts",
+      "gradle/libs.versions.toml",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "multipaz/build.gradle.kts",
+      "settings.gradle.kts"
+    ],
+    "sha256": "6da8da6a2bae78bfdf82b542cd338ac2a1d77b4719bbe8466179a95eb1988675"
+  },
+  "evaluation_context": {
+    "audience": "https://rp.tyche.test",
+    "evaluated_at": "2026-08-12T08:00:05Z",
+    "nonce": "tyche-common-nonce-001"
+  },
+  "evidence_files": [
+    {
+      "path": "results/common-presentation-multipaz-clone-2026-08-12.log",
+      "sha256": "1edc36fc4d35120a40d055ac7c28e432094eb561f9f4e9adf5b3ee9d7bafe876"
+    },
+    {
+      "path": "results/common-presentation-multipaz-2026-08-12.log",
+      "sha256": "4825d84855e3436bef8c9017c03f7205c925e4a59f3f68e3b104d2b5d92951f6"
+    }
+  ],
+  "executed_at": "2026-08-12T08:14:01.358150+00:00",
+  "execution_control": "tyche-controlled-local-run",
+  "input": {
+    "corpus_sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+    "format": "dc+sd-jwt",
+    "presentation_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a"
+  },
+  "mutation": {
+    "case_id": "RP_WS_SM_IssuerAuthentication_001",
+    "raw_reason": "SignatureVerificationException: Error validating issuer signature",
+    "verdict": "REJECT"
+  },
+  "normalized_reason": "INVALID_ISSUER_SIGNATURE",
+  "policy_configuration_sha256": "1d8fa11b3ff85cce311b138869702e7ea866694fdf21bb769524308da99f15c5",
+  "production_source_unmodified": true,
+  "receipt_id": "urn:tyche:eudi:provenance:multipaz:RP_WS_SM_IssuerAuthentication_001:2026-08-12",
+  "repository": "https://github.com/openwallet-foundation/multipaz",
+  "schema_version": "1.0.0-research",
+  "source_commit": "570aa2475bd5b7e437d9041bf8ff1127bcf86cfb",
+  "source_tree": "29b6d52564f18addda552f5a0a7e4e690077d1e6",
+  "trust_source": {
+    "revision": "urn:tyche:eudi:common-sdjwt-presentation:001",
+    "sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+    "type": "synthetic-x5c-and-pinned-jwk"
+  }
+}

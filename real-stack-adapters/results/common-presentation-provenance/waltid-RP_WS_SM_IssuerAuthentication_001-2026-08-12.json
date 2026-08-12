@@ -1,0 +1,59 @@
+{
+  "adapter_id": "waltid",
+  "baseline": {
+    "case_id": "COMMON-SDJWT-BASELINE-001",
+    "verdict": "ACCEPT"
+  },
+  "build_configuration_sha256": "3b0f3c6f064a4ba4efdcee2c1471fc63a12000b9fa97d0cfe393daee1ab16667",
+  "claim_boundary": "Pinned-stack execution of one synthetic common compact presentation and one isolated issuer-signature mutation. The run demonstrates the stated library/verifier decision at this commit and configuration; it is not an independent reproduction, full RP-service workflow, product certification, or EUDIW/FCAF conformance result.",
+  "dependency_material": {
+    "paths": [
+      "build.gradle.kts",
+      "gradle/libs.versions.toml",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "settings.gradle.kts",
+      "waltid-libraries/credentials/waltid-verification-policies2/build.gradle.kts"
+    ],
+    "sha256": "65057950596dc5c7c096ef1722e91e62ed0f0c63cd6d75fba245ddce51a782d3"
+  },
+  "evaluation_context": {
+    "audience": "https://rp.tyche.test",
+    "evaluated_at": "2026-08-12T08:00:05Z",
+    "nonce": "tyche-common-nonce-001"
+  },
+  "evidence_files": [
+    {
+      "path": "results/common-presentation-waltid-clone-2026-08-12.log",
+      "sha256": "1079c154f0e7c6fd811cb32726fa9fa0866474aebb3c510868b495d60db55709"
+    },
+    {
+      "path": "results/common-presentation-waltid-2026-08-12.log",
+      "sha256": "d5d70a4041c8a5f86e7339ac5c07229761c857d3327a463b2bc29fb6a276dac2"
+    }
+  ],
+  "executed_at": "2026-08-12T08:14:01.358150+00:00",
+  "execution_control": "tyche-controlled-local-run",
+  "input": {
+    "corpus_sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+    "format": "dc+sd-jwt",
+    "presentation_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a"
+  },
+  "mutation": {
+    "case_id": "RP_WS_SM_IssuerAuthentication_001",
+    "raw_reason": "id.walt.crypto2.jose.InvalidJwsSignatureException: Invalid JWS signature",
+    "verdict": "REJECT"
+  },
+  "normalized_reason": "INVALID_ISSUER_SIGNATURE",
+  "policy_configuration_sha256": "274ff3c383067995797f8795c543ccf476efd9a3f57c852e2a411f32f8c4608b",
+  "production_source_unmodified": true,
+  "receipt_id": "urn:tyche:eudi:provenance:waltid:RP_WS_SM_IssuerAuthentication_001:2026-08-12",
+  "repository": "https://github.com/walt-id/waltid-identity",
+  "schema_version": "1.0.0-research",
+  "source_commit": "f773918a3ad226ba7c0908d58941f18a3b89591d",
+  "source_tree": "c3724e5fa5e0672ec3948f3c852f8f49944cca26",
+  "trust_source": {
+    "revision": "urn:tyche:eudi:common-sdjwt-presentation:001",
+    "sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+    "type": "synthetic-x5c-and-pinned-jwk"
+  }
+}

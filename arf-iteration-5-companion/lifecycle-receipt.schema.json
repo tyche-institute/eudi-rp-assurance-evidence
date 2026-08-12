@@ -1,0 +1,110 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tyche.institute/schemas/eudiw-lifecycle-receipt-0.1.json",
+  "title": "Tyche EUDIW request lifecycle receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "record_id",
+    "action_type",
+    "created_at",
+    "subject_reference",
+    "rp_binding",
+    "request_authentication",
+    "lifecycle",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "0.1.0-research"},
+    "record_id": {"pattern": "^urn:tyche:test:lifecycle:[a-z0-9-]+$", "type": "string"},
+    "action_type": {"enum": ["data_deletion_request", "dpa_report"]},
+    "created_at": {"format": "date-time", "type": "string"},
+    "subject_reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["prior_transaction_sha256", "user_reference_mode", "user_reference_sha256"],
+      "properties": {
+        "prior_transaction_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "user_reference_mode": {"enum": ["transaction_bound", "pseudonymous_handle"]},
+        "user_reference_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "requested_attribute_hashes": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+        }
+      }
+    },
+    "rp_binding": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "registered_party_id_sha256",
+        "authenticated_party_id_sha256",
+        "contact_source",
+        "registered_contact_sha256",
+        "selected_contact_sha256"
+      ],
+      "properties": {
+        "registered_party_id_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "authenticated_party_id_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "contact_source": {"enum": ["RPRC", "RPAC", "RP_REGISTRY"]},
+        "registered_contact_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "selected_contact_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+      }
+    },
+    "request_authentication": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "method"],
+      "properties": {
+        "state": {"enum": ["NOT_YET_REQUIRED", "REQUIRED_NOT_DONE", "PASSED", "FAILED"]},
+        "method": {"enum": ["none_at_initiation", "wallet_authentication", "wallet_signature", "rp_selected_other"]}
+      }
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["state", "events"],
+      "properties": {
+        "state": {
+          "enum": ["INITIATED", "HANDED_OFF", "DELIVERY_CONFIRMED", "ACKNOWLEDGED", "COMPLETED", "REFUSED"]
+        },
+        "events": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "additionalProperties": false,
+            "required": ["state", "at"],
+            "properties": {
+              "state": {
+                "enum": ["INITIATED", "HANDED_OFF", "DELIVERY_CONFIRMED", "ACKNOWLEDGED", "COMPLETED", "REFUSED"]
+              },
+              "at": {"format": "date-time", "type": "string"},
+              "evidence_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+            }
+          }
+        }
+      }
+    },
+    "report_evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["claim_code", "rp_evidence_sha256", "request_evidence_sha256"],
+      "properties": {
+        "claim_code": {"enum": ["SUSPICIOUS_REQUEST", "ALLEGED_OVER_REQUEST", "ALLEGED_IDENTITY_MISMATCH", "OTHER_USER_CLAIM"]},
+        "rp_evidence_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"},
+        "request_evidence_sha256": {"pattern": "^[0-9a-f]{64}$", "type": "string"}
+      }
+    },
+    "claim_boundary": {"minLength": 30, "type": "string"}
+  },
+  "allOf": [
+    {
+      "if": {"properties": {"action_type": {"const": "dpa_report"}}},
+      "then": {"required": ["report_evidence"]}
+    }
+  ]
+}
+

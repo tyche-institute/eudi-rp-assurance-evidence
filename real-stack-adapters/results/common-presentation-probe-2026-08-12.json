@@ -1,0 +1,27 @@
+{
+  "adapters": [
+    "eudi-official",
+    "multipaz",
+    "waltid"
+  ],
+  "baseline_verdicts": [
+    "ACCEPT",
+    "ACCEPT",
+    "ACCEPT"
+  ],
+  "case_id": "RP_WS_SM_IssuerAuthentication_001",
+  "claim_boundary": "Three Tyche-controlled pinned-stack executions; not independent reproduction or conformance certification.",
+  "corpus_sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+  "environment": {
+    "architecture": "x86_64",
+    "os": "Linux-6.8.0-137-generic-x86_64-with-glibc2.39"
+  },
+  "executed_at": "2026-08-12T08:14:01.358150+00:00",
+  "mutation_verdicts": [
+    "REJECT",
+    "REJECT",
+    "REJECT"
+  ],
+  "presentation_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a",
+  "schema_version": "1.0.0-research"
+}

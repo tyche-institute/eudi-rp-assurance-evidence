@@ -1,0 +1,76 @@
+{
+  "schema_version": "0.1.0-research",
+  "scenario": {
+    "id": "CROSS_BORDER_MOBILITY_ONBOARDING_001",
+    "title": "Cross-border mobility-service onboarding",
+    "journey": [
+      "authenticate the service and bind it to its wallet registration",
+      "request only the facts registered for the selected service purpose",
+      "verify the presentation in the current session",
+      "bind the business decision to the exact verifier and policy",
+      "support later deletion or reporting without overstating lifecycle state"
+    ],
+    "data_rule": "Use synthetic or predicate-level test data only; no real traveller or booking record."
+  },
+  "cards": [
+    {
+      "id": "TM-A-WHO-IS-ASKING",
+      "plain_question": "Can the traveller see and the system prove which service is asking?",
+      "failure_to_try": "The access certificate and registration identify different relying-party services.",
+      "minimum_evidence": [
+        "registered RP and service identifier",
+        "authenticated RP and service identifier",
+        "registration and certificate version",
+        "comparison verdict"
+      ],
+      "success_boundary": "Identity binding only; it does not prove that the service request is lawful or necessary."
+    },
+    {
+      "id": "TM-B-WHAT-AND-WHY",
+      "plain_question": "Are the requested facts the minimum needed for this exact service?",
+      "failure_to_try": "The request adds a raw date of birth where an age-over-threshold fact is sufficient, or asks for an attribute outside the registered intended use.",
+      "minimum_evidence": [
+        "registered intended-use identifier",
+        "registered attribute set",
+        "requested attribute set",
+        "subset and purpose verdict"
+      ],
+      "success_boundary": "A technical subset check does not decide the legal basis or proportionality by itself."
+    },
+    {
+      "id": "TM-C-THIS-TRANSACTION",
+      "plain_question": "Is the wallet answer fresh and bound to this service session?",
+      "failure_to_try": "Replay a valid presentation with another audience, nonce, origin, holder or evaluation time.",
+      "minimum_evidence": [
+        "request and response hashes",
+        "audience and challenge commitments",
+        "holder-binding method",
+        "evaluation time and raw verifier reason"
+      ],
+      "success_boundary": "Presentation binding does not prove downstream use or retention stayed within approval."
+    },
+    {
+      "id": "TM-D-WHAT-HAPPENED",
+      "plain_question": "Can a later reviewer reconstruct the decision and distinguish a request initiated from one completed?",
+      "failure_to_try": "Mark a deletion request as completed when the wallet only opened an external browser or email client.",
+      "minimum_evidence": [
+        "verifier source and policy commitment",
+        "consumed-attribute commitment",
+        "decision reason and time",
+        "lifecycle state with a separate evidence reference"
+      ],
+      "success_boundary": "A receipt records evidence and assertions; it is not a compliance certificate or legal finding."
+    }
+  ],
+  "session_protocol": {
+    "duration_minutes": 15,
+    "steps": [
+      "3 min: choose one real service journey and identify the relying decision",
+      "4 min: select the card whose failure would be most costly or hardest to diagnose",
+      "5 min: walk through one synthetic negative case and the evidence needed to resolve it",
+      "3 min: record only an agreed technical observation, or end as an unrecorded discussion"
+    ]
+  },
+  "claim_boundary": "Independent research discussion aid; not Commission-endorsed, not certification, and not evidence of programme selection or attendance."
+}
+

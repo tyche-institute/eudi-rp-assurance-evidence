@@ -1,0 +1,111 @@
+{
+  "schema_version": "0.1.0-research",
+  "corpus_id": "urn:tyche:eudi:arf-i5-lm-lifecycle:0.1",
+  "baselines": [
+    {
+      "base_id": "L_BASELINE_INITIATED_001",
+      "record": {
+        "schema_version": "0.1.0-research",
+        "record_id": "urn:tyche:test:lifecycle:deletion-001",
+        "action_type": "data_deletion_request",
+        "created_at": "2026-08-12T12:00:00Z",
+        "subject_reference": {
+          "prior_transaction_sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+          "user_reference_mode": "transaction_bound",
+          "user_reference_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+          "requested_attribute_hashes": [
+            "3333333333333333333333333333333333333333333333333333333333333333"
+          ]
+        },
+        "rp_binding": {
+          "registered_party_id_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+          "authenticated_party_id_sha256": "4444444444444444444444444444444444444444444444444444444444444444",
+          "contact_source": "RPRC",
+          "registered_contact_sha256": "5555555555555555555555555555555555555555555555555555555555555555",
+          "selected_contact_sha256": "5555555555555555555555555555555555555555555555555555555555555555"
+        },
+        "request_authentication": {
+          "state": "NOT_YET_REQUIRED",
+          "method": "none_at_initiation"
+        },
+        "lifecycle": {
+          "state": "INITIATED",
+          "events": [
+            {"state": "INITIATED", "at": "2026-08-12T12:00:00Z"}
+          ]
+        },
+        "claim_boundary": "Records initiation only; it does not prove transmission, receipt, authentication, erasure or legal entitlement."
+      }
+    },
+    {
+      "base_id": "M_BASELINE_INITIATED_001",
+      "record": {
+        "schema_version": "0.1.0-research",
+        "record_id": "urn:tyche:test:lifecycle:report-001",
+        "action_type": "dpa_report",
+        "created_at": "2026-08-12T12:05:00Z",
+        "subject_reference": {
+          "prior_transaction_sha256": "6666666666666666666666666666666666666666666666666666666666666666",
+          "user_reference_mode": "transaction_bound",
+          "user_reference_sha256": "7777777777777777777777777777777777777777777777777777777777777777"
+        },
+        "rp_binding": {
+          "registered_party_id_sha256": "8888888888888888888888888888888888888888888888888888888888888888",
+          "authenticated_party_id_sha256": "8888888888888888888888888888888888888888888888888888888888888888",
+          "contact_source": "RP_REGISTRY",
+          "registered_contact_sha256": "9999999999999999999999999999999999999999999999999999999999999999",
+          "selected_contact_sha256": "9999999999999999999999999999999999999999999999999999999999999999"
+        },
+        "request_authentication": {
+          "state": "NOT_YET_REQUIRED",
+          "method": "none_at_initiation"
+        },
+        "lifecycle": {
+          "state": "INITIATED",
+          "events": [
+            {"state": "INITIATED", "at": "2026-08-12T12:05:00Z"}
+          ]
+        },
+        "report_evidence": {
+          "claim_code": "ALLEGED_OVER_REQUEST",
+          "rp_evidence_sha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          "request_evidence_sha256": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+        },
+        "claim_boundary": "Records the user's allegation and bounded evidence commitments; it is not a finding by a DPA or by Tyche."
+      }
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "L_CONTACT_NOT_REGISTRATION_BOUND_001",
+      "base_id": "L_BASELINE_INITIATED_001",
+      "operation": "replace",
+      "path": "/rp_binding/selected_contact_sha256",
+      "value": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc",
+      "expected_verdict": "REJECT",
+      "expected_reason": "CONTACT_NOT_REGISTRATION_BOUND",
+      "source_scope": "TS7 supportURI and RPT_DPA_06 contact-source chain; exact hash comparison is a research oracle."
+    },
+    {
+      "case_id": "LM_INITIATED_REPRESENTED_AS_COMPLETED_001",
+      "base_id": "L_BASELINE_INITIATED_001",
+      "operation": "replace",
+      "path": "/lifecycle/state",
+      "value": "COMPLETED",
+      "expected_verdict": "REJECT",
+      "expected_reason": "LIFECYCLE_STATE_UNSUPPORTED",
+      "source_scope": "DATA_DLT_06 and RPT_DPA_05 log initiation; the explicit lifecycle oracle is a research proposal."
+    },
+    {
+      "case_id": "M_REPORT_EVIDENCE_OVER_COLLECTION_001",
+      "base_id": "M_BASELINE_INITIATED_001",
+      "operation": "add",
+      "path": "/report_evidence/raw_credential",
+      "value": "synthetic-raw-credential-must-not-be-embedded",
+      "expected_verdict": "REJECT",
+      "expected_reason": "SCHEMA_FORBIDDEN_FIELD",
+      "source_scope": "RPT_DPA_04 permits substantiation; commitment-only minimisation is a Tyche research proposal."
+    }
+  ]
+}
+

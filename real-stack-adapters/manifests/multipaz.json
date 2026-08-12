@@ -1,0 +1,27 @@
+{
+  "adapter_id": "eudi-multipaz-adapter",
+  "implementation": "OpenWallet Foundation Multipaz verifier",
+  "repository": "https://github.com/openwallet-foundation/multipaz",
+  "pinned_commit": "570aa2475bd5b7e437d9041bf8ff1127bcf86cfb",
+  "source_paths": [
+    "multipaz-verifier/src/main/java/org/multipaz/verifier/request/verifyCredentials.kt",
+    "multipaz/src/commonMain/kotlin/org/multipaz/verification/PresentmentRecord.kt",
+    "multipaz/src/commonMain/kotlin/org/multipaz/trustmanagement/TrustManager.kt"
+  ],
+  "mapped_mechanisms": [
+    "presentment verification at an explicit verification time",
+    "trust decision through TrustManager",
+    "current verifier request and session surfaces"
+  ],
+  "unresolved_scope": [
+    "current verifier versus legacy verifier-server deployment mapping",
+    "RP registration and Service-specific certificate processing",
+    "downstream business reliance and consumed-attribute binding"
+  ],
+  "execution_status": "TYCHE_CONTROLLED_NARROW_PROBE_EXECUTED",
+  "required_return_evidence": [
+    "exact commit or release", "selected verifier module", "build/runtime configuration hash",
+    "case input hash", "raw verifier verdict", "stable or mapped reason",
+    "evaluation time", "TrustManager input/version", "downstream consumed-attribute commitment"
+  ]
+}

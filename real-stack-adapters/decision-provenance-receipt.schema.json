@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tyche:eudi:decision-provenance-receipt:schema:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version", "receipt_id", "adapter_id", "repository", "source_commit",
+    "source_tree", "dependency_material", "build_configuration_sha256",
+    "policy_configuration_sha256", "trust_source", "evaluation_context", "input",
+    "baseline", "mutation", "normalized_reason", "executed_at", "execution_control",
+    "production_source_unmodified", "evidence_files", "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.0.0-research"},
+    "receipt_id": {"type": "string", "pattern": "^urn:tyche:eudi:provenance:.+$"},
+    "adapter_id": {"type": "string", "minLength": 1},
+    "repository": {"type": "string", "format": "uri"},
+    "source_commit": {"type": "string", "pattern": "^[a-f0-9]{40,64}$"},
+    "source_tree": {"type": "string", "pattern": "^[a-f0-9]{40,64}$"},
+    "dependency_material": {
+      "type": "object", "additionalProperties": false, "required": ["paths", "sha256"],
+      "properties": {
+        "paths": {"type": "array", "minItems": 1, "items": {"type": "string"}},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "build_configuration_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "policy_configuration_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "trust_source": {
+      "type": "object", "additionalProperties": false, "required": ["type", "revision", "sha256"],
+      "properties": {
+        "type": {"type": "string"}, "revision": {"type": "string"},
+        "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "evaluation_context": {
+      "type": "object", "additionalProperties": false,
+      "required": ["evaluated_at", "nonce", "audience"],
+      "properties": {
+        "evaluated_at": {"type": "string", "format": "date-time"},
+        "nonce": {"type": "string", "minLength": 1},
+        "audience": {"type": "string", "format": "uri"}
+      }
+    },
+    "input": {
+      "type": "object", "additionalProperties": false,
+      "required": ["format", "corpus_sha256", "presentation_sha256"],
+      "properties": {
+        "format": {"const": "dc+sd-jwt"},
+        "corpus_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+        "presentation_sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+      }
+    },
+    "baseline": {
+      "type": "object", "additionalProperties": false, "required": ["case_id", "verdict"],
+      "properties": {
+        "case_id": {"const": "COMMON-SDJWT-BASELINE-001"}, "verdict": {"const": "ACCEPT"}
+      }
+    },
+    "mutation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["case_id", "verdict", "raw_reason"],
+      "properties": {
+        "case_id": {"const": "RP_WS_SM_IssuerAuthentication_001"},
+        "verdict": {"const": "REJECT"}, "raw_reason": {"type": "string", "minLength": 1}
+      }
+    },
+    "normalized_reason": {"const": "INVALID_ISSUER_SIGNATURE"},
+    "executed_at": {"type": "string", "format": "date-time"},
+    "execution_control": {"const": "tyche-controlled-local-run"},
+    "production_source_unmodified": {"type": "boolean"},
+    "evidence_files": {
+      "type": "array", "minItems": 1,
+      "items": {
+        "type": "object", "additionalProperties": false, "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string"}, "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"}
+        }
+      }
+    },
+    "claim_boundary": {"type": "string", "minLength": 1}
+  }
+}

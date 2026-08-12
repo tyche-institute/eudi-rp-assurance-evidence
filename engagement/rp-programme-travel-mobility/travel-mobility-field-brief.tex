@@ -1,0 +1,92 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[a4paper,margin=12mm]{geometry}
+\usepackage{fontspec}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\setmainfont{TeX Gyre Heros}
+\setsansfont{TeX Gyre Heros}
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{2.5pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=4mm,itemsep=0.2pt,topsep=1pt,parsep=0pt}
+\definecolor{navy}{HTML}{17365D}
+\definecolor{blue}{HTML}{235A9F}
+\definecolor{sky}{HTML}{EAF2FB}
+\definecolor{ink}{HTML}{17212B}
+\definecolor{muted}{HTML}{556270}
+\definecolor{green}{HTML}{20735A}
+\newcommand{\card}[4]{%
+  \fcolorbox{blue}{sky}{\begin{minipage}[t][45mm][t]{0.456\textwidth}\raggedright
+  {\color{navy}\bfseries\large #1}\hfill{\color{green}\bfseries #2}\par
+  {\bfseries #3}\par
+  \vspace{1pt}{\color{muted}\footnotesize #4}
+  \end{minipage}}}
+\begin{document}
+{\color{navy}\fontsize{20}{21}\selectfont\bfseries RP Assurance in Travel \& Mobility}\par
+\begin{tabularx}{\textwidth}{@{}X>{\raggedleft\arraybackslash}p{0.34\textwidth}@{}}
+{\color{blue}\large Four questions that make a wallet presentation safe to rely on} &
+{\color{muted}\footnotesize Tyche Institute · research field packet · 12 Aug 2026}
+\end{tabularx}
+
+\vspace{3pt}
+\colorbox{navy}{\parbox{\dimexpr\textwidth-2\fboxsep}{\color{white}\bfseries
+Scenario: a traveller onboards to a cross-border mobility service. The wallet can present facts;
+the relying party still has to prove who asked, what was allowed, which transaction was verified,
+and what happened afterwards.}}
+
+\vspace{4pt}
+\begin{tabularx}{\textwidth}{>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X>{\centering\arraybackslash}X}
+\textbf{1 · Register} & \textbf{2 · Request} & \textbf{3 · Present} & \textbf{4 · Decide} & \textbf{5 · Rights}\\[-1pt]
+Who is the service? & What facts, and why? & Is it this session? & What was relied on? & Initiated or completed?\\
+\end{tabularx}
+
+\vspace{4pt}
+\card{A}{WHO?}{Can the traveller see—and the system prove—which service is asking?}{%
+\textbf{Try:} access certificate and registration identify different services.\par
+\textbf{Keep:} registered/authenticated service IDs, certificate and registration versions, comparison verdict.\par
+\textbf{Limit:} identity binding does not prove necessity or lawfulness.}
+\hfill
+\card{B}{WHAT / WHY?}{Are the requested facts the minimum needed for this service?}{%
+\textbf{Try:} request raw birth date when an age predicate suffices, or an attribute outside registered intended use.\par
+\textbf{Keep:} intended-use ID, registered set, requested set, subset/purpose verdict.\par
+\textbf{Limit:} a subset check does not decide legal basis.}
+
+\vspace{3pt}
+\card{C}{THIS SESSION?}{Is the wallet answer fresh and bound to this transaction?}{%
+\textbf{Try:} replay with another audience, nonce, origin, holder or evaluation time.\par
+\textbf{Keep:} request/response hashes, challenge and audience commitments, binding method, time, raw reason.\par
+\textbf{Limit:} presentation validity does not prove later use stayed within approval.}
+\hfill
+\card{D}{WHAT HAPPENED?}{Can a later reviewer reconstruct the decision and lifecycle?}{%
+\textbf{Try:} mark a deletion request completed when the wallet only opened a browser or email client.\par
+\textbf{Keep:} verifier/policy commitment, consumed-attribute commitment, decision reason/time, lifecycle evidence.\par
+\textbf{Limit:} a receipt is not a compliance certificate or legal finding.}
+
+\vspace{4pt}
+\begin{minipage}[t]{0.60\textwidth}
+{\color{navy}\bfseries A useful 15-minute programme conversation}\par
+\begin{itemize}
+  \item \textbf{3 min} — choose one real service journey and its relying decision.
+  \item \textbf{4 min} — select the failure that is hardest or most costly to diagnose.
+  \item \textbf{5 min} — walk through one synthetic negative case and required evidence.
+  \item \textbf{3 min} — agree a technical observation, or end unrecorded.
+\end{itemize}
+\end{minipage}\hfill
+\fcolorbox{green}{white}{\begin{minipage}[t]{0.34\textwidth}\raggedright
+{\color{green}\bfseries The one field question}\par
+Which evidence should travel across borders so that another operator can reproduce the RP decision
+without receiving traveller data or secret configuration?
+\end{minipage}}
+
+\vspace{5pt}
+{\color{muted}\footnotesize
+Synthetic research aid. No traveller, booking, participant, survey or production-credential data.
+Not Commission-endorsed; not EUDIW/FCAF conformance. Record a participant observation only under a
+separate explicit permission route. Canonical structured cards and reproducibility materials are
+versioned by Tyche Institute.}
+\end{document}

@@ -1,0 +1,347 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Type-safe project accessors is an incubating feature.
+
+> Configure project :multipaz
+Skipping artifact signing for multipaz: No signing keys configured.
+w: ⚠️ Invalid Source Set Dependency Across Trees
+Kotlin Source Set 'androidInstrumentedTest' can't depend on 'commonTest' as they are from different Source Set Trees.
+Solution: Please remove this dependency edge.
+
+
+> Configure project :multipaz-android-legacy
+Skipping artifact signing for multipaz-android-legacy: No signing keys configured.
+
+> Configure project :multipaz-cbor-rpc
+Skipping artifact signing for multipaz-cbor-rpc: No signing keys configured.
+
+> Task :build-logic:conventions:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:lokalize:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:conventions:pluginDescriptors
+> Task :build-logic:conventions:processResources
+> Task :build-logic:lokalize:pluginDescriptors
+> Task :build-logic:lokalize:processResources
+
+> Configure project :multipaz-compose
+
+The Kotlin Gradle plugin was loaded multiple times in different subprojects, which is not supported and may break the build. 
+This might happen in subprojects that apply the Kotlin plugins with the Gradle 'plugins { ... }' DSL if they specify explicit versions, even if the versions are equal.
+Please add the Kotlin plugin to the common parent project or the root project, then remove the versions in the subprojects.
+If the parent project does not need the plugin, add 'apply false' to the plugin line.
+See: https://docs.gradle.org/current/userguide/plugins.html#sec:subprojects_plugins_dsl
+The Kotlin plugin was loaded in the following projects: ':conventions', ':dokka-known-subclasses-plugin'
+
+> Task :build-logic:lokalize:compileKotlin
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/build-logic/lokalize/src/main/kotlin/org/multipaz/lokalize/llm/strategy/ProviderStrategy.kt:3:8 'class SingleLLMPromptExecutor : PromptExecutor' is deprecated. Please use MultiLLMPromptExecutor instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/build-logic/lokalize/src/main/kotlin/org/multipaz/lokalize/llm/strategy/ProviderStrategy.kt:21:41 'class SingleLLMPromptExecutor : PromptExecutor' is deprecated. Please use MultiLLMPromptExecutor instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/build-logic/lokalize/src/main/kotlin/org/multipaz/lokalize/service/KoogTranslationService.kt:49:56 'class SingleLLMPromptExecutor : PromptExecutor' is deprecated. Please use MultiLLMPromptExecutor instead.
+
+> Task :build-logic:lokalize:compileJava NO-SOURCE
+> Task :build-logic:lokalize:classes
+> Task :build-logic:lokalize:jar
+> Task :build-logic:conventions:compileKotlin
+> Task :build-logic:conventions:compileJava NO-SOURCE
+> Task :build-logic:conventions:classes
+> Task :build-logic:conventions:jar
+
+> Configure project :multipaz-compose
+Skipping artifact signing for multipaz-compose: No signing keys configured.
+
+> Configure project :multipaz-dcapi
+Skipping artifact signing for multipaz-dcapi: No signing keys configured.
+w: ⚠️ Invalid Source Set Dependency Across Trees
+Kotlin Source Set 'androidInstrumentedTest' can't depend on 'commonTest' as they are from different Source Set Trees.
+Solution: Please remove this dependency edge.
+
+
+> Configure project :multipaz-doctypes
+Skipping artifact signing for multipaz-doctypes: No signing keys configured.
+
+> Configure project :multipaz-longfellow
+Skipping artifact signing for multipaz-longfellow: No signing keys configured.
+
+> Configure project :multipaz-openid4vci
+Skipping artifact signing for multipaz-openid4vci: No signing keys configured.
+
+> Configure project :multipaz-records
+Skipping artifact signing for multipaz-records: No signing keys configured.
+
+> Configure project :multipaz-server
+Skipping artifact signing for multipaz-server: No signing keys configured.
+
+> Configure project :multipaz-server-frontend
+e: ❌ No Kotlin Targets Declared
+Please initialize at least one Kotlin target in 'multipaz-server-frontend (:multipaz-server-frontend)'.
+Solution: Please declare at least one Kotlin target.
+Read more https://kotl.in/set-up-targets
+
+w: ⚠️ Unused Kotlin Source Sets
+The following Kotlin source sets were configured but not added to any Kotlin compilation:
+ * commonMain
+ * commonTest
+Solution: You can add a source set to a target's compilation by connecting it with the compilation's default source set using 'dependsOn'.
+See https://kotl.in/connecting-source-sets
+
+
+> Configure project :multipaz-swiftui
+Skipping artifact signing for multipaz-swiftui: No signing keys configured.
+
+> Configure project :multipaz-utopia
+Skipping artifact signing for multipaz-utopia: No signing keys configured.
+
+> Configure project :multipaz-verifier
+Skipping artifact signing for multipaz-verifier: No signing keys configured.
+
+> Configure project :multipaz-tools:web
+e: ❌ No Kotlin Targets Declared
+Please initialize at least one Kotlin target in 'web (:multipaz-tools:web)'.
+Solution: Please declare at least one Kotlin target.
+Read more https://kotl.in/set-up-targets
+
+w: ⚠️ Unused Kotlin Source Sets
+The following Kotlin source sets were configured but not added to any Kotlin compilation:
+ * commonMain
+ * commonTest
+Solution: You can add a source set to a target's compilation by connecting it with the compilation's default source set using 'dependsOn'.
+See https://kotl.in/connecting-source-sets
+
+
+> Task :multipaz:kmpPartiallyResolvedDependenciesChecker
+> Task :multipaz:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :multipaz:generateBuildConfigClasses
+> Task :multipaz:generateJavaSharedMainBuildConfigClasses SKIPPED
+> Task :multipaz:generateJvmMainBuildConfigClasses SKIPPED
+> Task :multipaz:transformCommonMainDependenciesMetadata
+> Task :multipaz-cbor-rpc:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :multipaz-cbor-rpc:processResources
+> Task :multipaz:kspKotlinJvm SKIPPED
+> Task :multipaz:generateJvmTestBuildConfigClasses SKIPPED
+> Task :multipaz:generateTestBuildConfigClasses SKIPPED
+> Task :multipaz:jvmProcessResources NO-SOURCE
+> Task :multipaz:processJvmMainResources SKIPPED
+> Task :multipaz-doctypes:kmpPartiallyResolvedDependenciesChecker
+> Task :multipaz-doctypes:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :multipaz:metadataCommonMainProcessResources NO-SOURCE
+> Task :multipaz:transformJavaSharedMainDependenciesMetadata
+> Task :multipaz:generateProjectStructureMetadata
+> Task :multipaz:metadataJavaSharedMainProcessResources NO-SOURCE
+> Task :multipaz:generateNativeMainBuildConfigClasses SKIPPED
+> Task :multipaz:generateAppleMainBuildConfigClasses SKIPPED
+> Task :multipaz:metadataNativeMainProcessResources NO-SOURCE
+> Task :multipaz:generateIosMainBuildConfigClasses SKIPPED
+> Task :multipaz:metadataAppleMainProcessResources NO-SOURCE
+> Task :multipaz:metadataIosMainProcessResources NO-SOURCE
+> Task :multipaz-utopia:kmpPartiallyResolvedDependenciesChecker
+> Task :multipaz-utopia:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :multipaz:exportRootPublicationCoordinatesForMetadataApiElements
+> Task :multipaz-doctypes:generateProjectStructureMetadata
+> Task :multipaz-doctypes:metadataCommonMainProcessResources NO-SOURCE
+> Task :multipaz-doctypes:metadataNativeMainProcessResources NO-SOURCE
+> Task :multipaz-doctypes:metadataAppleMainProcessResources NO-SOURCE
+> Task :multipaz-doctypes:metadataIosMainProcessResources NO-SOURCE
+> Task :multipaz-cbor-rpc:compileKotlin
+> Task :multipaz-cbor-rpc:compileJava NO-SOURCE
+> Task :multipaz-cbor-rpc:classes
+> Task :multipaz-cbor-rpc:jar
+> Task :multipaz:kspCommonMainKotlinMetadata
+
+> Task :multipaz:compileCommonMainKotlinMetadata
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/crypto/EcPublicKeyDoubleCoordinate.kt:62:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/crypto/EcPublicKeyOkp.kt:59:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/engagement/EngagementGenerator.kt:49:78 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/engagement/EngagementGenerator.kt:63:56 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/nfc/scanMdocReader.kt:233:13 Condition is always 'false'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:80:8 'class DeviceRequestGenerator : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:128:26 'suspend fun coseSign1Sign(secureArea: SecureArea, alias: String, message: ByteArray, includeMessageInPayload: Boolean, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>, unlockReason: Reason = ...): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:168:8 'class DeviceRequestGenerator : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:239:26 'suspend fun coseSign1Sign(key: EcPrivateKey, dataToSign: ByteArray, includeDataInPayload: Boolean, signatureAlgorithm: Algorithm, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DeviceResponseParser.kt:33:8 'class MobileSecurityObjectParser : Any' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DeviceResponseParser.kt:168:29 'constructor(encodedMobileSecurityObject: ByteArray): MobileSecurityObjectParser' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DocumentGenerator.kt:70:60 'class DocumentGenerator : Any' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DocumentGenerator.kt:124:22 'suspend fun coseSign1Sign(secureArea: SecureArea, alias: String, message: ByteArray, includeMessageInPayload: Boolean, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>, unlockReason: Reason = ...): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:31:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:32:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:41:8 'class DeviceRequestParser : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:261:18 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:371:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:380:16 'constructor(requestedDataElements: List<DocumentRequest.DataElement>): DocumentRequest' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/openid/OpenID4VP.kt:717:67 Unchecked cast of 'List<RequestedClaim>' to 'List<MdocRequestedClaim>'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/openid/OpenID4VP.kt:802:58 Unchecked cast of 'List<RequestedClaim>' to 'List<JsonRequestedClaim>'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/presentment/mdocPresentment.kt:237:70 Unchecked cast of 'List<RequestedClaim>' to 'List<MdocRequestedClaim>'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/provisioning/DocumentProvisioningHandler.kt:161:49 Unchecked cast of 'List<Credential>' to 'List<SecureAreaBoundCredential>'.
+
+> Task :multipaz:metadataCommonMainClasses
+> Task :multipaz:kspJavaSharedMainKotlinMetadata SKIPPED
+> Task :multipaz:compileJavaSharedMainKotlinMetadata SKIPPED
+> Task :multipaz:metadataJavaSharedMainClasses UP-TO-DATE
+> Task :multipaz:allMetadataJar
+> Task :multipaz:compileNativeMainKotlinMetadata SKIPPED
+> Task :multipaz:metadataNativeMainClasses UP-TO-DATE
+> Task :multipaz:compileAppleMainKotlinMetadata SKIPPED
+> Task :multipaz:metadataAppleMainClasses UP-TO-DATE
+> Task :multipaz:compileIosMainKotlinMetadata SKIPPED
+> Task :multipaz:metadataIosMainClasses UP-TO-DATE
+> Task :multipaz:exportCommonSourceSetsMetadataLocationsForMetadataApiElements
+> Task :multipaz-doctypes:transformCommonMainDependenciesMetadata
+> Task :multipaz-doctypes:kspCommonMainKotlinMetadata
+> Task :multipaz-doctypes:compileCommonMainKotlinMetadata
+> Task :multipaz-doctypes:metadataCommonMainClasses
+> Task :multipaz-doctypes:allMetadataJar
+> Task :multipaz-doctypes:compileNativeMainKotlinMetadata SKIPPED
+> Task :multipaz-doctypes:metadataNativeMainClasses UP-TO-DATE
+> Task :multipaz-doctypes:compileAppleMainKotlinMetadata SKIPPED
+> Task :multipaz-doctypes:metadataAppleMainClasses UP-TO-DATE
+> Task :multipaz-doctypes:compileIosMainKotlinMetadata SKIPPED
+> Task :multipaz-doctypes:metadataIosMainClasses UP-TO-DATE
+> Task :multipaz-doctypes:exportCommonSourceSetsMetadataLocationsForMetadataApiElements
+> Task :multipaz-utopia:transformCommonMainDependenciesMetadata
+> Task :multipaz-utopia:kspCommonMainKotlinMetadata
+
+> Task :multipaz:compileKotlinJvm
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/crypto/EcPublicKeyDoubleCoordinate.kt:62:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/crypto/EcPublicKeyOkp.kt:59:23 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/engagement/EngagementGenerator.kt:49:78 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/engagement/EngagementGenerator.kt:63:56 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/nfc/scanMdocReader.kt:233:13 Condition is always 'false'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:80:8 'class DeviceRequestGenerator : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:128:26 'suspend fun coseSign1Sign(secureArea: SecureArea, alias: String, message: ByteArray, includeMessageInPayload: Boolean, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>, unlockReason: Reason = ...): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:168:8 'class DeviceRequestGenerator : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/request/DeviceRequestGenerator.kt:239:26 'suspend fun coseSign1Sign(key: EcPrivateKey, dataToSign: ByteArray, includeDataInPayload: Boolean, signatureAlgorithm: Algorithm, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DeviceResponseParser.kt:33:8 'class MobileSecurityObjectParser : Any' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DeviceResponseParser.kt:168:29 'constructor(encodedMobileSecurityObject: ByteArray): MobileSecurityObjectParser' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DocumentGenerator.kt:70:60 'class DocumentGenerator : Any' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/response/DocumentGenerator.kt:124:22 'suspend fun coseSign1Sign(secureArea: SecureArea, alias: String, message: ByteArray, includeMessageInPayload: Boolean, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>, unlockReason: Reason = ...): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:31:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:32:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:41:8 'class DeviceRequestParser : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:261:18 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:371:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/mdoc/util/MdocUtil.kt:380:16 'constructor(requestedDataElements: List<DocumentRequest.DataElement>): DocumentRequest' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/openid/OpenID4VP.kt:717:67 Unchecked cast of 'List<RequestedClaim>' to 'List<MdocRequestedClaim>'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/openid/OpenID4VP.kt:802:58 Unchecked cast of 'List<RequestedClaim>' to 'List<JsonRequestedClaim>'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/presentment/mdocPresentment.kt:237:70 Unchecked cast of 'List<RequestedClaim>' to 'List<MdocRequestedClaim>'.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonMain/kotlin/org/multipaz/provisioning/DocumentProvisioningHandler.kt:161:49 Unchecked cast of 'List<Credential>' to 'List<SecureAreaBoundCredential>'.
+
+> Task :multipaz:compileJvmMainJava NO-SOURCE
+> Task :multipaz:jvmMainClasses
+> Task :multipaz:jvmJar
+> Task :multipaz-doctypes:kspKotlinJvm SKIPPED
+> Task :multipaz-doctypes:jvmProcessResources NO-SOURCE
+> Task :multipaz-doctypes:processJvmMainResources SKIPPED
+> Task :multipaz-doctypes:compileKotlinJvm
+> Task :multipaz-doctypes:compileJvmMainJava NO-SOURCE
+> Task :multipaz-doctypes:jvmMainClasses
+> Task :multipaz-doctypes:jvmJar
+> Task :multipaz-utopia:kspKotlinJvm SKIPPED
+> Task :multipaz-utopia:jvmProcessResources NO-SOURCE
+> Task :multipaz-utopia:processJvmMainResources SKIPPED
+> Task :multipaz-utopia:compileKotlinJvm
+> Task :multipaz-utopia:compileJvmMainJava NO-SOURCE
+> Task :multipaz-utopia:jvmMainClasses
+> Task :multipaz-utopia:jvmJar
+
+> Task :multipaz:kspTestKotlinJvm
+w: [ksp] /tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/jvmTest/kotlin/org/multipaz/rpc/CborSerializationTest.kt:153: Supertype name is not a prefix or suffix of subtype name, rename or specify typeId explicitly: IscInheritsRoot
+w: [ksp] /tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/jvmTest/kotlin/org/multipaz/rpc/CborSerializationTest.kt:147: Supertype name is not a prefix or suffix of subtype name, rename or specify typeId explicitly: IscInheritsIntermediate
+
+> Task :multipaz:jvmTestProcessResources
+> Task :multipaz:processJvmTestResources SKIPPED
+
+> Task :multipaz:compileTestKotlinJvm
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/cose/CoseTests.kt:63:34 'suspend fun coseSign1Sign(key: EcPrivateKey, dataToSign: ByteArray, includeDataInPayload: Boolean, signatureAlgorithm: Algorithm, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/cose/CoseTests.kt:135:34 'suspend fun coseSign1Sign(key: EcPrivateKey, dataToSign: ByteArray, includeDataInPayload: Boolean, signatureAlgorithm: Algorithm, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/cose/CoseTests.kt:179:48 'suspend fun coseSign1Sign(secureArea: SecureArea, alias: String, message: ByteArray, includeMessageInPayload: Boolean, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>, unlockReason: Reason = ...): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/cose/CoseTests.kt:204:46 'suspend fun coseSign1Sign(secureArea: SecureArea, alias: String, message: ByteArray, includeMessageInPayload: Boolean, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>, unlockReason: Reason = ...): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/DeviceEngagementTest.kt:85:22 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:36:18 'constructor(eSenderKey: EcPublicKey, version: String): EngagementGenerator' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:38:13 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:41:22 'constructor(encodedEngagement: ByteArray): EngagementParser' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:44:22 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:54:18 'constructor(eSenderKey: EcPublicKey, version: String): EngagementGenerator' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:56:13 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:69:22 'constructor(encodedEngagement: ByteArray): EngagementParser' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementGeneratorTest.kt:72:22 'class EngagementGenerator : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/engagement/EngagementParserTest.kt:32:22 'constructor(encodedEngagement: ByteArray): EngagementParser' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:169:26 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:185:19 'constructor(encodedMobileSecurityObject: ByteArray): MobileSecurityObjectParser' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:226:26 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:234:19 'constructor(encodedMobileSecurityObject: ByteArray): MobileSecurityObjectParser' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:282:13 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:288:28 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:337:13 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:352:13 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:384:26 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectGeneratorTest.kt:391:19 'constructor(encodedMobileSecurityObject: ByteArray): MobileSecurityObjectParser' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/mso/MobileSecurityObjectParserTest.kt:44:19 'constructor(encodedMobileSecurityObject: ByteArray): MobileSecurityObjectParser' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestGeneratorTest.kt:87:36 'constructor(encodedSessionTranscript: ByteArray): DeviceRequestGenerator' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestGeneratorTest.kt:105:29 'constructor(encodedDeviceRequest: ByteArray, encodedSessionTranscript: ByteArray): DeviceRequestParser' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestGeneratorTest.kt:199:36 'constructor(encodedSessionTranscript: ByteArray): DeviceRequestGenerator' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestGeneratorTest.kt:209:29 'constructor(encodedDeviceRequest: ByteArray, encodedSessionTranscript: ByteArray): DeviceRequestParser' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestParserTest.kt:54:22 'constructor(encodedDeviceRequest: ByteArray, encodedSessionTranscript: ByteArray): DeviceRequestParser' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestParserTest.kt:115:22 'constructor(encodedDeviceRequest: ByteArray, encodedSessionTranscript: ByteArray): DeviceRequestParser' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestParserTest.kt:170:36 'constructor(encodedSessionTranscript: ByteArray): DeviceRequestGenerator' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestParserTest.kt:180:29 'constructor(encodedDeviceRequest: ByteArray, encodedSessionTranscript: ByteArray): DeviceRequestParser' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestTest.kt:31:8 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/request/DeviceRequestTest.kt:1626:26 'typealias Instant = Instant' is deprecated. This type is deprecated in favor of `kotlin.time.Instant`.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:30:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:31:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:40:8 'class MobileSecurityObjectGenerator : Any' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:164:32 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:204:22 'suspend fun coseSign1Sign(key: EcPrivateKey, dataToSign: ByteArray, includeDataInPayload: Boolean, signatureAlgorithm: Algorithm, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:237:23 'constructor(requestedDataElements: List<DocumentRequest.DataElement>): DocumentRequest' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:248:39 'constructor(mStatusCode: Long): DeviceResponseGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:250:13 'constructor(docType: String, encodedIssuerAuth: ByteArray, encodedSessionTranscript: ByteArray): DocumentGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:263:22 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:360:23 'constructor(requestedDataElements: List<DocumentRequest.DataElement>): DocumentRequest' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:373:39 'constructor(mStatusCode: Long): DeviceResponseGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:375:13 'constructor(docType: String, encodedIssuerAuth: ByteArray, encodedSessionTranscript: ByteArray): DocumentGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:388:22 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:457:23 'constructor(requestedDataElements: List<DocumentRequest.DataElement>): DocumentRequest' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:474:39 'constructor(mStatusCode: Long): DeviceResponseGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:476:13 'constructor(docType: String, encodedIssuerAuth: ByteArray, encodedSessionTranscript: ByteArray): DocumentGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:488:22 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:594:39 'constructor(mStatusCode: Long): DeviceResponseGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:596:13 'constructor(docType: String, encodedIssuerAuth: ByteArray, encodedSessionTranscript: ByteArray): DocumentGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:606:22 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:674:23 'constructor(requestedDataElements: List<DocumentRequest.DataElement>): DocumentRequest' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:685:39 'constructor(mStatusCode: Long): DeviceResponseGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:687:13 'constructor(docType: String, encodedIssuerAuth: ByteArray, encodedSessionTranscript: ByteArray): DocumentGenerator' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseGeneratorTest.kt:700:22 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseParserTest.kt:58:18 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseParserTest.kt:190:18 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseParserTest.kt:242:18 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseParserTest.kt:287:18 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseParserTest.kt:328:24 'constructor(encodedDeviceResponse: ByteArray, encodedSessionTranscript: ByteArray): DeviceResponseParser' is deprecated. Deprecated, use DeviceResponse instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/response/DeviceResponseTest.kt:1172:13 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/sessionencryption/SessionEncryptionTest.kt:25:8 'class EngagementParser : Any' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/sessionencryption/SessionEncryptionTest.kt:55:32 'constructor(encodedEngagement: ByteArray): EngagementParser' is deprecated. This class is deprecated, use DeviceEngagement instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/transport/NfcTransportTests.kt:50:42 'fun resume(value: ResponseApdu, onCancellation: ((Throwable) -> Unit)?): Unit' is deprecated. Use the overload that also accepts the `value` and the coroutine context in lambda.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/util/MdocUtilTest.kt:25:8 'class DocumentRequest : Any' is deprecated. Deprecated, use Request instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/util/MdocUtilTest.kt:32:8 'class DeviceRequestParser : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/mdoc/util/MdocUtilTest.kt:280:22 'constructor(encodedDeviceRequest: ByteArray, encodedSessionTranscript: ByteArray): DeviceRequestParser' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/presentment/Iso18013PresentmentTest.kt:20:8 'class DeviceRequestGenerator : Any' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/presentment/Iso18013PresentmentTest.kt:63:25 'constructor(encodedSessionTranscript: ByteArray): DeviceRequestGenerator' is deprecated. This class is deprecated, use DeviceRequest instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/presentment/digitalCredentialsPresentmentTest.kt:503:13 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/presentment/digitalCredentialsPresentmentTest.kt:513:17 Redundant creation of Json format. Creating instances for each usage can be slow.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/provisioning/ProvisioningModelTest.kt:37:8 'class MobileSecurityObjectGenerator : Any' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/provisioning/ProvisioningModelTest.kt:363:36 'constructor(digestAlgorithm: Algorithm, docType: String, deviceKey: EcPublicKey): MobileSecurityObjectGenerator' is deprecated. Deprecated, use MobileSecurityObject instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/commonTest/kotlin/org/multipaz/provisioning/ProvisioningModelTest.kt:403:26 'suspend fun coseSign1Sign(key: EcPrivateKey, dataToSign: ByteArray, includeDataInPayload: Boolean, signatureAlgorithm: Algorithm, protectedHeaders: Map<CoseLabel, DataItem>, unprotectedHeaders: Map<CoseLabel, DataItem>): CoseSign1' is deprecated. Use SigningKey-based method instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/jvmTest/kotlin/org/multipaz/crypto/JsonWebEncryptionTestsNimbus.kt:61:22 'constructor(p0: Curve!, p1: ECPublicKey!, p2: ECPrivateKey!, p3: KeyUse!, p4: (Mutable)Set<KeyOperation!>!, p5: Algorithm!, p6: String!, p7: URI!, p8: Base64URL!, p9: Base64URL!, p10: (Mutable)List<Base64!>!, p11: Date!, p12: Date!, p13: Date!, p14: KeyStore!): ECKey' is deprecated. Deprecated in Java.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/jvmTest/kotlin/org/multipaz/crypto/JsonWebSignatureTestsNimbus.kt:82:42 'suspend fun sign(key: EcPrivateKey, signatureAlgorithm: Algorithm, claimsSet: JsonObject, type: String?, x5c: X509CertChain?): String' is deprecated. Use org.multipaz.jwt.buildJwt instead.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/jvmTest/kotlin/org/multipaz/crypto/JsonWebSignatureTestsNimbus.kt:136:21 'constructor(p0: Curve!, p1: ECPublicKey!, p2: ECPrivateKey!, p3: KeyUse!, p4: (Mutable)Set<KeyOperation!>!, p5: Algorithm!, p6: String!, p7: URI!, p8: Base64URL!, p9: Base64URL!, p10: (Mutable)List<Base64!>!, p11: Date!, p12: Date!, p13: Date!, p14: KeyStore!): ECKey' is deprecated. Deprecated in Java.
+w: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/multipaz/src/jvmTest/kotlin/org/multipaz/storage/JdbcStorageTest.kt:290:32 This is a delicate API and its use requires care. Make sure you fully read and understand documentation of the declaration that is marked as a delicate API.
+
+> Task :multipaz:compileJvmTestJava NO-SOURCE
+> Task :multipaz:jvmTestClasses
+> Task :multipaz:jvmTest
+
+[Incubating] Problems report is available at: file:///tmp/tyche-common-presentation-e7Mhqh/multipaz/build/reports/problems/problems-report.html
+
+Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.
+
+You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.
+
+For more on this, please refer to https://docs.gradle.org/8.14.2/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.
+
+BUILD SUCCESSFUL in 52s
+41 actionable tasks: 41 executed

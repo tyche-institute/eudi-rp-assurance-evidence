@@ -1,0 +1,33 @@
+diff --git a/multipaz-dcapi/build.gradle.kts b/multipaz-dcapi/build.gradle.kts
+--- a/multipaz-dcapi/build.gradle.kts
++++ b/multipaz-dcapi/build.gradle.kts
+@@ -101,7 +101,6 @@ kotlin {
+         val androidInstrumentedTest by getting {
+             dependsOn(commonTest)
+             dependencies {
+-                implementation(project(":multipaz-dcapi:matcherTest"))
+                 implementation(libs.androidx.espresso.core)
+                 implementation(libs.kotlin.test)
+                 implementation(libs.kotlinx.coroutines.test)
+diff --git a/multipaz/build.gradle.kts b/multipaz/build.gradle.kts
+--- a/multipaz/build.gradle.kts
++++ b/multipaz/build.gradle.kts
+@@ -195,7 +195,6 @@ kotlin {
+                 implementation(libs.bouncy.castle.bcpkix)
+                 implementation(project(":multipaz-doctypes"))
+                 implementation(project(":multipaz-dcapi"))
+-                implementation(project(":multipaz-dcapi:matcherTest"))
+                 implementation(libs.androidx.sqlite)
+                 implementation(libs.androidx.sqlite.framework)
+                 implementation(libs.androidx.sqlite.bundled)
+diff --git a/settings.gradle.kts b/settings.gradle.kts
+--- a/settings.gradle.kts
++++ b/settings.gradle.kts
+@@ -75,7 +75,6 @@ include(":multipaz-csa")
+ include(":multipaz-android-legacy")
+ include(":multipaz-longfellow")
+ include(":multipazctl")
+-include(":multipaz-dcapi:matcherTest")
+ include(":multipaz-server")
+ include(":multipaz-backend-server")
+ include(":multipaz-compose")

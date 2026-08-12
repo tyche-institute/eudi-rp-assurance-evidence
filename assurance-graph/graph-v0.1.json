@@ -1,0 +1,1202 @@
+{
+  "claim_boundary": "Typed joins among research artifacts and pinned evidence only; not an official EUDIW/FCAF graph, not conformance, and not independent reproduction.",
+  "edges": [
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:001:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_PARSE_INVALID",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_PARSE_INVALID",
+      "id": "edge:002:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_MS_PresentationSyntax_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_PARSE_INVALID",
+      "id": "edge:003:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:OpenID4VP-1.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_PARSE_INVALID",
+      "id": "edge:004:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:005:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_RP_UNREGISTERED",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_RP_UNREGISTERED",
+      "id": "edge:006:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_Registration_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_RP_UNREGISTERED",
+      "id": "edge:007:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:eIDAS-Art-5b",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_RP_UNREGISTERED",
+      "id": "edge:008:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2025-848",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:009:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_RP_SUSPENDED",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_RP_SUSPENDED",
+      "id": "edge:010:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_RegistrationStatus_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_RP_SUSPENDED",
+      "id": "edge:011:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2025-848",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:012:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_RP_IDENTITY_MISMATCH",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_RP_IDENTITY_MISMATCH",
+      "id": "edge:013:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_RegistrationIdentity_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_RP_IDENTITY_MISMATCH",
+      "id": "edge:014:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:eIDAS-Art-5b",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_RP_IDENTITY_MISMATCH",
+      "id": "edge:015:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ETSI-TS-119-475",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:016:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_PURPOSE_MISMATCH",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_PURPOSE_MISMATCH",
+      "id": "edge:017:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_IA_IntendedUse_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_PURPOSE_MISMATCH",
+      "id": "edge:018:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:eIDAS-Art-5b",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_PURPOSE_MISMATCH",
+      "id": "edge:019:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ETSI-TS-119-475",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_PURPOSE_MISMATCH",
+      "id": "edge:020:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2024-2981-TR40",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:021:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_ATTRIBUTE_OVER_REQUEST",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_ATTRIBUTE_OVER_REQUEST",
+      "id": "edge:022:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_IA_AttributeRequest_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_ATTRIBUTE_OVER_REQUEST",
+      "id": "edge:023:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:eIDAS-Art-5b",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_ATTRIBUTE_OVER_REQUEST",
+      "id": "edge:024:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ETSI-TS-119-475",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_ATTRIBUTE_OVER_REQUEST",
+      "id": "edge:025:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2024-2981-TR90",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:026:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_ISSUER_SIGNATURE_INVALID",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_ISSUER_SIGNATURE_INVALID",
+      "id": "edge:027:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_IssuerAuthentication_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_ISSUER_SIGNATURE_INVALID",
+      "id": "edge:028:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_ISSUER_SIGNATURE_INVALID",
+      "id": "edge:029:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:OpenID4VP-1.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:030:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_DISCLOSURE_UNBOUND",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_DISCLOSURE_UNBOUND",
+      "id": "edge:031:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_DisclosureBinding_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_DISCLOSURE_UNBOUND",
+      "id": "edge:032:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:RFC-9901",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_DISCLOSURE_UNBOUND",
+      "id": "edge:033:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:034:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_HOLDER_BINDING_INVALID",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_HOLDER_BINDING_INVALID",
+      "id": "edge:035:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_HolderBinding_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_HOLDER_BINDING_INVALID",
+      "id": "edge:036:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_HOLDER_BINDING_INVALID",
+      "id": "edge:037:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:OpenID4VP-1.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:038:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_AUDIENCE_MISMATCH",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_AUDIENCE_MISMATCH",
+      "id": "edge:039:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_AudienceBinding_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_AUDIENCE_MISMATCH",
+      "id": "edge:040:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:OpenID4VP-1.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:041:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_NONCE_MISMATCH",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_NONCE_MISMATCH",
+      "id": "edge:042:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_ChallengeBinding_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_NONCE_MISMATCH",
+      "id": "edge:043:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:OpenID4VP-1.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_NONCE_MISMATCH",
+      "id": "edge:044:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2024-2981-TR91",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:045:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_PRESENTATION_STALE",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_PRESENTATION_STALE",
+      "id": "edge:046:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_Freshness_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_PRESENTATION_STALE",
+      "id": "edge:047:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:OpenID4VP-1.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_PRESENTATION_STALE",
+      "id": "edge:048:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2024-2981-TR91",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:049:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_CREDENTIAL_INACTIVE",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_CREDENTIAL_INACTIVE",
+      "id": "edge:050:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_CredentialStatus_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_CREDENTIAL_INACTIVE",
+      "id": "edge:051:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:052:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_ISSUER_UNTRUSTED",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_ISSUER_UNTRUSTED",
+      "id": "edge:053:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SM_IssuerTrust_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_ISSUER_UNTRUSTED",
+      "id": "edge:054:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:055:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_USE_EXCEEDS_APPROVAL",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_USE_EXCEEDS_APPROVAL",
+      "id": "edge:056:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_UC_RelianceUse_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_USE_EXCEEDS_APPROVAL",
+      "id": "edge:057:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:eIDAS-Art-5b",
+      "type": "anchored_in"
+    },
+    {
+      "from": "rule:R_USE_EXCEEDS_APPROVAL",
+      "id": "edge:058:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:CIR-2024-2981-TR40",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:059:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_LAWFUL_BASIS_UNRECORDED",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_LAWFUL_BASIS_UNRECORDED",
+      "id": "edge:060:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_UC_LawfulBasisRecord_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_LAWFUL_BASIS_UNRECORDED",
+      "id": "edge:061:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:ARF-3.0.0",
+      "type": "anchored_in"
+    },
+    {
+      "from": "profile:rp_verifier_assurance_0.1",
+      "id": "edge:062:contains",
+      "scope": "The research profile contains this rule.",
+      "to": "rule:R_AUDIT_EVIDENCE_INCOMPLETE",
+      "type": "contains"
+    },
+    {
+      "from": "rule:R_AUDIT_EVIDENCE_INCOMPLETE",
+      "id": "edge:063:operationalized_by",
+      "scope": "One candidate objective translates this research rule; it does not make the rule official.",
+      "to": "objective:RP_WS_SH_DecisionEvidence_001",
+      "type": "operationalized_by"
+    },
+    {
+      "from": "rule:R_AUDIT_EVIDENCE_INCOMPLETE",
+      "id": "edge:064:anchored_in",
+      "scope": "The research rule cites this normative or documentary anchor.",
+      "to": "source:research-proposal",
+      "type": "anchored_in"
+    },
+    {
+      "from": "objective:RP_WS_SM_IssuerAuthentication_001",
+      "id": "edge:065:realized_by",
+      "scope": "This is the first full local specification for the candidate objective.",
+      "to": "case:RP_WS_SM_IssuerAuthentication_001",
+      "type": "realized_by"
+    },
+    {
+      "from": "case:RP_WS_SM_IssuerAuthentication_001",
+      "id": "edge:066:anchored_in",
+      "scope": "The local research specification follows the current FCAF template and proposed future RP SUT hierarchy.",
+      "to": "source:FCAF",
+      "type": "anchored_in"
+    },
+    {
+      "from": "case:RP_WS_SM_IssuerAuthentication_001",
+      "id": "edge:067:uses_corpus",
+      "scope": "The test case uses the exact baseline and isolated issuer-signature mutation in this corpus.",
+      "to": "corpus:common_sdjwt_001",
+      "type": "uses_corpus"
+    },
+    {
+      "from": "case:RP_WS_SM_IssuerAuthentication_001",
+      "id": "edge:068:evidenced_by",
+      "scope": "The receipt records a Tyche-controlled execution of this exact case.",
+      "to": "receipt:eudi-official",
+      "type": "evidenced_by"
+    },
+    {
+      "from": "receipt:eudi-official",
+      "id": "edge:069:decision_from",
+      "scope": "The receipt binds its observed decision to this pinned implementation source.",
+      "to": "implementation:eudi-official",
+      "type": "decision_from"
+    },
+    {
+      "from": "receipt:eudi-official",
+      "id": "edge:070:consumed_exact_input",
+      "scope": "The receipt records the SHA-256 of this exact corpus and mutated presentation.",
+      "to": "corpus:common_sdjwt_001",
+      "type": "consumed_exact_input"
+    },
+    {
+      "from": "case:RP_WS_SM_IssuerAuthentication_001",
+      "id": "edge:071:evidenced_by",
+      "scope": "The receipt records a Tyche-controlled execution of this exact case.",
+      "to": "receipt:multipaz",
+      "type": "evidenced_by"
+    },
+    {
+      "from": "receipt:multipaz",
+      "id": "edge:072:decision_from",
+      "scope": "The receipt binds its observed decision to this pinned implementation source.",
+      "to": "implementation:multipaz",
+      "type": "decision_from"
+    },
+    {
+      "from": "receipt:multipaz",
+      "id": "edge:073:consumed_exact_input",
+      "scope": "The receipt records the SHA-256 of this exact corpus and mutated presentation.",
+      "to": "corpus:common_sdjwt_001",
+      "type": "consumed_exact_input"
+    },
+    {
+      "from": "case:RP_WS_SM_IssuerAuthentication_001",
+      "id": "edge:074:evidenced_by",
+      "scope": "The receipt records a Tyche-controlled execution of this exact case.",
+      "to": "receipt:waltid",
+      "type": "evidenced_by"
+    },
+    {
+      "from": "receipt:waltid",
+      "id": "edge:075:decision_from",
+      "scope": "The receipt binds its observed decision to this pinned implementation source.",
+      "to": "implementation:waltid",
+      "type": "decision_from"
+    },
+    {
+      "from": "receipt:waltid",
+      "id": "edge:076:consumed_exact_input",
+      "scope": "The receipt records the SHA-256 of this exact corpus and mutated presentation.",
+      "to": "corpus:common_sdjwt_001",
+      "type": "consumed_exact_input"
+    }
+  ],
+  "graph_id": "urn:tyche:eudi:assurance-graph:0.1",
+  "metrics": {
+    "candidate_objectives": 17,
+    "exact_object_implementations": 3,
+    "fully_specified_objectives": 1,
+    "independent_executions": 0,
+    "profile_rules": 17,
+    "provenance_receipts": 3
+  },
+  "nodes": [
+    {
+      "id": "case:RP_WS_SM_IssuerAuthentication_001",
+      "label": "Reject an invalid SD-JWT issuer signature",
+      "properties": {
+        "path": "fcaf-rp-sut-companion/test-specs/RP_WS_SM_IssuerAuthentication_001.md"
+      },
+      "status": "local_test_spec_executed_not_fcaf",
+      "type": "test_case"
+    },
+    {
+      "id": "corpus:common_sdjwt_001",
+      "label": "Common deterministic SD-JWT presentation corpus",
+      "properties": {
+        "corpus_id": "urn:tyche:eudi:common-sdjwt-presentation:001",
+        "format": "dc+sd-jwt",
+        "mutation_presentation_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a",
+        "sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5"
+      },
+      "status": "synthetic_test_only",
+      "type": "corpus"
+    },
+    {
+      "id": "implementation:eudi-official",
+      "label": "European Commission EUDI verifier endpoint",
+      "properties": {
+        "commit": "db5442501ea06907e614377a20d802748e8bfddb",
+        "repository": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+        "source_tree": "e04b44e81d2e052838bc2bbbc082006a213aa396"
+      },
+      "status": "pinned_maintained_source",
+      "type": "implementation"
+    },
+    {
+      "id": "implementation:multipaz",
+      "label": "OpenWallet Foundation Multipaz verifier",
+      "properties": {
+        "commit": "570aa2475bd5b7e437d9041bf8ff1127bcf86cfb",
+        "repository": "https://github.com/openwallet-foundation/multipaz",
+        "source_tree": "29b6d52564f18addda552f5a0a7e4e690077d1e6"
+      },
+      "status": "pinned_maintained_source",
+      "type": "implementation"
+    },
+    {
+      "id": "implementation:waltid",
+      "label": "walt.id OpenID4VP verifier",
+      "properties": {
+        "commit": "f773918a3ad226ba7c0908d58941f18a3b89591d",
+        "repository": "https://github.com/walt-id/waltid-identity",
+        "source_tree": "c3724e5fa5e0672ec3948f3c852f8f49944cca26"
+      },
+      "status": "pinned_maintained_source",
+      "type": "implementation"
+    },
+    {
+      "id": "objective:RP_WS_IA_AttributeRequest_001",
+      "label": "Refuse requested attributes that exceed the registered attribute set",
+      "properties": {
+        "area": "RequestPolicy",
+        "expected_evidence": "The over-requested field is detected without treating wallet-user interaction as legal authorisation",
+        "layer": "IA",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_IA_IntendedUse_001",
+      "label": "Refuse a transaction purpose outside the relying party's registered intended uses",
+      "properties": {
+        "area": "RequestPolicy",
+        "expected_evidence": "The receipt binds requested purpose registered intended use and the refusal reason",
+        "layer": "IA",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_MS_PresentationSyntax_001",
+      "label": "Refuse a presentation that cannot be parsed under the selected protocol and format profile",
+      "properties": {
+        "area": "PresentationSyntax",
+        "expected_evidence": "Refusal occurs before any relying decision and preserves a stable raw parsing reason",
+        "layer": "MS",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SH_DecisionEvidence_001",
+      "label": "Identify the exact verifier version policy version registration identifier trust-source revision evaluation time and stable raw reason for the decision",
+      "properties": {
+        "area": "DecisionEvidence",
+        "expected_evidence": "A verifier decision can be independently matched to source dependencies configuration inputs and outputs without disclosing secrets",
+        "layer": "SH",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf_research_proposal",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_AudienceBinding_001",
+      "label": "Refuse a presentation bound to another verifier audience",
+      "properties": {
+        "area": "TransactionBinding",
+        "expected_evidence": "The audience-only mutation is refused and bound to the exact request and verifier instance",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_ChallengeBinding_001",
+      "label": "Refuse a presentation that does not match the verifier challenge",
+      "properties": {
+        "area": "TransactionBinding",
+        "expected_evidence": "The nonce-only mutation is refused and the receipt contains non-secret challenge correlation evidence",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_CredentialStatus_001",
+      "label": "Refuse a credential that is inactive at the evaluation time",
+      "properties": {
+        "area": "CredentialStatus",
+        "expected_evidence": "The status-source revision retrieval mode evaluation time and raw status verdict are recorded",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_DisclosureBinding_001",
+      "label": "Refuse a disclosed value that is not bound to the issuer-authenticated object",
+      "properties": {
+        "area": "DisclosureBinding",
+        "expected_evidence": "A single-property disclosure mutation is refused with a raw reason that distinguishes binding from syntax",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_Freshness_001",
+      "label": "Refuse a presentation outside the declared freshness window",
+      "properties": {
+        "area": "Freshness",
+        "expected_evidence": "The evaluation time clock policy and freshness threshold are reproducibly identified",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_HolderBinding_001",
+      "label": "Refuse when the applicable holder or device binding fails",
+      "properties": {
+        "area": "HolderBinding",
+        "expected_evidence": "The result identifies the binding method and applicability profile without claiming identity truth",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_IssuerAuthentication_001",
+      "label": "Refuse a credential whose issuer authentication fails",
+      "properties": {
+        "area": "CredentialAuthenticity",
+        "expected_evidence": "The exact format algorithm and raw verification outcome are recorded",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "local_test_spec_executed_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_IssuerTrust_001",
+      "label": "Refuse an issuer outside the applicable relying-party trust policy",
+      "properties": {
+        "area": "TrustEvaluation",
+        "expected_evidence": "The trust policy and trust-source revision are bound to the refusal without calling the result certification",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_RegistrationIdentity_001",
+      "label": "Refuse when the authenticated relying-party identity does not match the registered identity",
+      "properties": {
+        "area": "RPIdentity",
+        "expected_evidence": "The identity mismatch is detected before attribute disclosure or reliance and is evidenced without exposing secret key material",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_RegistrationStatus_001",
+      "label": "Refuse use of a suspended or cancelled relying-party registration",
+      "properties": {
+        "area": "RPRegistration",
+        "expected_evidence": "The exact registration identifier status source and evaluation time are recorded with the refusal",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_SM_Registration_001",
+      "label": "Refuse a wallet request path when the relying party lacks the registration required for that transaction",
+      "properties": {
+        "area": "RPRegistration",
+        "expected_evidence": "No authorised request is created and the decision identifies the registration lookup state",
+        "layer": "SM",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_UC_LawfulBasisRecord_001",
+      "label": "Record the relying party's asserted lawful basis separately from wallet-user approval",
+      "properties": {
+        "area": "PostPresentationUse",
+        "expected_evidence": "The receipt keeps asserted lawful basis and user interaction as distinct evidence fields without deciding lawfulness",
+        "layer": "UC",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf_research_extension",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "objective:RP_WS_UC_RelianceUse_001",
+      "label": "Prevent later business use of attributes outside the transaction-approved set",
+      "properties": {
+        "area": "PostPresentationUse",
+        "expected_evidence": "The reliance record uses only the approved subset and identifies any prevented excess use",
+        "layer": "UC",
+        "sut": "RelyingParty",
+        "test_class": "RelyingParty_WalletSolution"
+      },
+      "status": "candidate_test_objective_not_fcaf_research_extension",
+      "type": "candidate_objective"
+    },
+    {
+      "id": "profile:rp_verifier_assurance_0.1",
+      "label": "EUDI Relying-Party Verifier Assurance Profile",
+      "properties": {
+        "claim_boundary": "A conforming run shows only that a named verifier path enforced the listed technical and semantic refusal rules for a frozen transaction record. It does not establish legal compliance, certification, lawful purpose, or ENISA endorsement.",
+        "sha256": "136bff4e2b46e970e03398e1b02a747f12b5dbabcb58817abaca5cded8c4fbbc",
+        "version": "0.1.0-research"
+      },
+      "status": "research-proposal-not-adopted",
+      "type": "research_profile"
+    },
+    {
+      "id": "receipt:eudi-official",
+      "label": "urn:tyche:eudi:provenance:eudi-official:RP_WS_SM_IssuerAuthentication_001:2026-08-12",
+      "properties": {
+        "baseline_verdict": "ACCEPT",
+        "claim_boundary": "Pinned-stack execution of one synthetic common compact presentation and one isolated issuer-signature mutation. The run demonstrates the stated library/verifier decision at this commit and configuration; it is not an independent reproduction, full RP-service workflow, product certification, or EUDIW/FCAF conformance result.",
+        "mutation_verdict": "REJECT",
+        "raw_reason": "ContainsInvalidJwt",
+        "sha256": "bc97ec1339613587776e1783e02cce43d82c78a557349c8f0a493106b29a84e6"
+      },
+      "status": "tyche_controlled_not_independent",
+      "type": "evidence_receipt"
+    },
+    {
+      "id": "receipt:multipaz",
+      "label": "urn:tyche:eudi:provenance:multipaz:RP_WS_SM_IssuerAuthentication_001:2026-08-12",
+      "properties": {
+        "baseline_verdict": "ACCEPT",
+        "claim_boundary": "Pinned-stack execution of one synthetic common compact presentation and one isolated issuer-signature mutation. The run demonstrates the stated library/verifier decision at this commit and configuration; it is not an independent reproduction, full RP-service workflow, product certification, or EUDIW/FCAF conformance result.",
+        "mutation_verdict": "REJECT",
+        "raw_reason": "SignatureVerificationException: Error validating issuer signature",
+        "sha256": "ea3c2ff65f56a306244e53596f7a27a348e1d9c093ca729451c0ba17ac4ba2f8"
+      },
+      "status": "tyche_controlled_not_independent",
+      "type": "evidence_receipt"
+    },
+    {
+      "id": "receipt:waltid",
+      "label": "urn:tyche:eudi:provenance:waltid:RP_WS_SM_IssuerAuthentication_001:2026-08-12",
+      "properties": {
+        "baseline_verdict": "ACCEPT",
+        "claim_boundary": "Pinned-stack execution of one synthetic common compact presentation and one isolated issuer-signature mutation. The run demonstrates the stated library/verifier decision at this commit and configuration; it is not an independent reproduction, full RP-service workflow, product certification, or EUDIW/FCAF conformance result.",
+        "mutation_verdict": "REJECT",
+        "raw_reason": "id.walt.crypto2.jose.InvalidJwsSignatureException: Invalid JWS signature",
+        "sha256": "febe01f7dca3aaf3bddcfe7edf76c064057d62838261ab308dc96b1fface1fe8"
+      },
+      "status": "tyche_controlled_not_independent",
+      "type": "evidence_receipt"
+    },
+    {
+      "id": "rule:R_ATTRIBUTE_OVER_REQUEST",
+      "label": "Requested attributes are a subset of the registered attribute set.",
+      "properties": {
+        "anchors": [
+          "eIDAS-Art-5b",
+          "ETSI-TS-119-475",
+          "CIR-2024-2981-TR90"
+        ],
+        "phase": "request"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_AUDIENCE_MISMATCH",
+      "label": "The presentation is bound to the intended verifier audience.",
+      "properties": {
+        "anchors": [
+          "OpenID4VP-1.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_AUDIT_EVIDENCE_INCOMPLETE",
+      "label": "The decision identifies the verifier version, policy version, registration identifier and a stable reason code.",
+      "properties": {
+        "anchors": [
+          "research-proposal"
+        ],
+        "phase": "reliance"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_CREDENTIAL_INACTIVE",
+      "label": "Credential status is active at verification time.",
+      "properties": {
+        "anchors": [
+          "ARF-3.0.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_DISCLOSURE_UNBOUND",
+      "label": "Every selectively disclosed value is bound to the issuer-signed object.",
+      "properties": {
+        "anchors": [
+          "RFC-9901",
+          "ARF-3.0.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_HOLDER_BINDING_INVALID",
+      "label": "Holder or device binding required by the credential and transaction succeeds.",
+      "properties": {
+        "anchors": [
+          "ARF-3.0.0",
+          "OpenID4VP-1.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_ISSUER_SIGNATURE_INVALID",
+      "label": "Issuer authentication succeeds.",
+      "properties": {
+        "anchors": [
+          "ARF-3.0.0",
+          "OpenID4VP-1.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_ISSUER_UNTRUSTED",
+      "label": "The issuer is accepted by the relying party's applicable trust policy.",
+      "properties": {
+        "anchors": [
+          "ARF-3.0.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_LAWFUL_BASIS_UNRECORDED",
+      "label": "The relying party records the asserted legal basis separately from wallet-user approval.",
+      "properties": {
+        "anchors": [
+          "ARF-3.0.0"
+        ],
+        "phase": "reliance"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_NONCE_MISMATCH",
+      "label": "The presentation is bound to the verifier challenge.",
+      "properties": {
+        "anchors": [
+          "OpenID4VP-1.0",
+          "CIR-2024-2981-TR91"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_PARSE_INVALID",
+      "label": "The presentation input is syntactically processable.",
+      "properties": {
+        "anchors": [
+          "OpenID4VP-1.0",
+          "ARF-3.0.0"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_PRESENTATION_STALE",
+      "label": "The presentation falls within the declared freshness window.",
+      "properties": {
+        "anchors": [
+          "OpenID4VP-1.0",
+          "CIR-2024-2981-TR91"
+        ],
+        "phase": "presentation"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_PURPOSE_MISMATCH",
+      "label": "The transaction purpose is among the purposes declared for the relying party.",
+      "properties": {
+        "anchors": [
+          "eIDAS-Art-5b",
+          "ETSI-TS-119-475",
+          "CIR-2024-2981-TR40"
+        ],
+        "phase": "request"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_RP_IDENTITY_MISMATCH",
+      "label": "The authenticated relying-party identity matches the registered identity.",
+      "properties": {
+        "anchors": [
+          "eIDAS-Art-5b",
+          "ETSI-TS-119-475"
+        ],
+        "phase": "request"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_RP_SUSPENDED",
+      "label": "A suspended or cancelled registration cannot authorize a request.",
+      "properties": {
+        "anchors": [
+          "CIR-2025-848"
+        ],
+        "phase": "request"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_RP_UNREGISTERED",
+      "label": "The relying party is registered for wallet use.",
+      "properties": {
+        "anchors": [
+          "eIDAS-Art-5b",
+          "CIR-2025-848"
+        ],
+        "phase": "request"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "rule:R_USE_EXCEEDS_APPROVAL",
+      "label": "Attributes used in the reliance decision are a subset of the attributes approved for the transaction.",
+      "properties": {
+        "anchors": [
+          "eIDAS-Art-5b",
+          "CIR-2024-2981-TR40"
+        ],
+        "phase": "reliance"
+      },
+      "status": "research_rule_not_official_requirement",
+      "type": "profile_rule"
+    },
+    {
+      "id": "source:ARF-3.0.0",
+      "label": "EUDI Wallet Architecture and Reference Framework 3.0.0",
+      "properties": {
+        "pin": "6373eee10b6e80225c7ce706a5ff1775fb799b22",
+        "url": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:CIR-2024-2981-TR40",
+      "label": "Commission Implementing Regulation (EU) 2024/2981, Topic 40 anchor",
+      "properties": {
+        "pin": "2024-2981",
+        "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2981/oj"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:CIR-2024-2981-TR90",
+      "label": "Commission Implementing Regulation (EU) 2024/2981, Topic 90 anchor",
+      "properties": {
+        "pin": "2024-2981",
+        "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2981/oj"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:CIR-2024-2981-TR91",
+      "label": "Commission Implementing Regulation (EU) 2024/2981, Topic 91 anchor",
+      "properties": {
+        "pin": "2024-2981",
+        "url": "https://eur-lex.europa.eu/eli/reg_impl/2024/2981/oj"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:CIR-2025-848",
+      "label": "Commission Implementing Regulation (EU) 2025/848",
+      "properties": {
+        "pin": "2025-848",
+        "url": "https://eur-lex.europa.eu/eli/reg_impl/2025/848/oj"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:ETSI-TS-119-475",
+      "label": "ETSI TS 119 475",
+      "properties": {
+        "pin": "profile-anchor",
+        "url": "https://www.etsi.org/deliver/etsi_ts/119400_119499/119475/"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:FCAF",
+      "label": "EUDI Wallet Functional Conformance Assessment Framework methodology",
+      "properties": {
+        "pin": "7494831a1a9085bb6649c0a2f190e7c32070fcef",
+        "url": "https://github.com/eu-digital-identity-wallet/eudi-doc-functional-conformance-assessment/blob/7494831a1a9085bb6649c0a2f190e7c32070fcef/docs/fcaf/index.md"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:OpenID4VP-1.0",
+      "label": "OpenID for Verifiable Presentations 1.0",
+      "properties": {
+        "pin": "1.0-final",
+        "url": "https://openid.net/specs/openid-4-verifiable-presentations-1_0.html"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:RFC-9901",
+      "label": "RFC 9901: Selective Disclosure for JWTs",
+      "properties": {
+        "pin": "RFC-9901",
+        "url": "https://www.rfc-editor.org/rfc/rfc9901.html"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:eIDAS-Art-5b",
+      "label": "Regulation (EU) No 910/2014, Article 5b",
+      "properties": {
+        "pin": "consolidated-2024-10-18",
+        "url": "https://eur-lex.europa.eu/eli/reg/2014/910/2024-10-18"
+      },
+      "status": "pinned_or_versioned_anchor",
+      "type": "official_source"
+    },
+    {
+      "id": "source:research-proposal",
+      "label": "Tyche research proposal",
+      "properties": {
+        "pin": "0.1.0-research",
+        "url": "https://tyche.institute/"
+      },
+      "status": "research_proposal_not_normative",
+      "type": "research_source"
+    }
+  ],
+  "schema_version": "0.1.0-research",
+  "snapshot_date": "2026-08-12"
+}

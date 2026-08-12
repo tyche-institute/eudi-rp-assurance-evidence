@@ -1,0 +1,28 @@
+{
+  "snapshot_date": "2026-08-12",
+  "sources": [
+    {
+      "repository": "https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework",
+      "commit": "6373eee10b6e80225c7ce706a5ff1775fb799b22",
+      "path": "docs/discussion-topics/l+m-data-deletion-and-reporting-of-wrp-to-dpa.md",
+      "blob_sha": "9c0bf79151541e1286915c70bca91cde1371588d"
+    },
+    {
+      "repository": "https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications",
+      "commit": "bdc9780224bf4fb07ae7ddc11a2a6962e4536442",
+      "path": "docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md",
+      "blob_sha": "ba952d9c24820ad7e79a640ed166328afb92152d"
+    }
+  ],
+  "official_requirements_used": [
+    "DATA_DLT_02",
+    "DATA_DLT_05",
+    "DATA_DLT_06",
+    "DATA_DLT_07",
+    "RPT_DPA_04",
+    "RPT_DPA_05",
+    "RPT_DPA_06"
+  ],
+  "research_extension": "Explicit multi-state lifecycle receipts and commitment-only report minimisation are Tyche proposals, not current ARF or TS7 requirements."
+}
+

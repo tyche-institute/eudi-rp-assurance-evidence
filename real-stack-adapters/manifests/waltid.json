@@ -1,0 +1,28 @@
+{
+  "adapter_id": "eudi-waltid-adapter",
+  "implementation": "walt.id OpenID4VP verifier",
+  "repository": "https://github.com/walt-id/waltid-identity",
+  "pinned_commit": "f773918a3ad226ba7c0908d58941f18a3b89591d",
+  "source_paths": [
+    "waltid-libraries/protocols/waltid-openid4vp-verifier/src/commonMain/kotlin/id/walt/verifier2/handlers/vpresponse/Verifier2VPDirectPostHandler.kt",
+    "waltid-libraries/protocols/waltid-openid4vp-verifier/src/commonMain/kotlin/id/walt/verifier2/verification2/PresentationVerificationEngine.kt",
+    "waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/trustedauthorities/DcqlTrustedAuthoritiesChecker.kt"
+  ],
+  "mapped_mechanisms": [
+    "verification-session nonce, audience, origin, time and transaction-data context",
+    "advertised-algorithm checks",
+    "configured presentation-policy execution",
+    "DCQL trusted-authorities checker"
+  ],
+  "unresolved_scope": [
+    "effective trusted-authorities callback and deployment configuration",
+    "RP registration and Service-specific certificate processing",
+    "downstream business reliance and consumed-attribute binding"
+  ],
+  "execution_status": "TYCHE_CONTROLLED_NARROW_PROBE_EXECUTED",
+  "required_return_evidence": [
+    "exact commit or release", "policy configuration hash", "trusted-authorities configuration",
+    "case input hash", "raw verifier verdict", "stable or mapped reason",
+    "evaluation time", "registration/access certificate evidence", "downstream consumed-attribute commitment"
+  ]
+}

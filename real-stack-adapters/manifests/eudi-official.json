@@ -1,0 +1,29 @@
+{
+  "adapter_id": "eudi-official-adapter",
+  "implementation": "European Commission EUDI verifier endpoint",
+  "repository": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+  "pinned_commit": "db5442501ea06907e614377a20d802748e8bfddb",
+  "source_paths": [
+    "src/main/kotlin/eu/europa/ec/eudi/verifier/endpoint/adapter/out/presentation/ValidateSdJwtVcOrMsoMdocVerifiablePresentation.kt",
+    "src/main/kotlin/eu/europa/ec/eudi/verifier/endpoint/adapter/out/sdjwtvc/SdJwtVcValidator.kt",
+    "src/main/kotlin/eu/europa/ec/eudi/verifier/endpoint/domain/TransactionData.kt"
+  ],
+  "mapped_mechanisms": [
+    "expected nonce and audience validation",
+    "issued-at time and allowed-skew challenge predicate",
+    "credential and key-binding algorithm checks",
+    "transaction-data hash validation",
+    "attestation trust consultation"
+  ],
+  "unresolved_scope": [
+    "national RP registration and Relying Party Service certificate processing",
+    "downstream business reliance and consumed-attribute binding",
+    "deployment configuration and production-version identity"
+  ],
+  "execution_status": "TYCHE_CONTROLLED_NARROW_PROBE_EXECUTED",
+  "required_return_evidence": [
+    "exact commit or release", "build/runtime configuration hash", "case input hash",
+    "raw verifier verdict", "stable or mapped reason", "evaluation time",
+    "trust-source version", "access/registration certificate evidence", "downstream consumed-attribute commitment"
+  ]
+}

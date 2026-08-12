@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: "If you use this evidence packet, please cite it and the associated article."
+title: "EUDI RP Assurance Evidence"
+type: software
+version: 0.1.0
+date-released: 2026-08-12
+authors:
+  - family-names: Sokolov
+    given-names: Anton
+affiliation: Tyche Institute
+repository-code: "https://github.com/tyche-institute/eudi-rp-assurance-evidence"
+license: MIT
+keywords:
+  - EUDI Wallet
+  - relying party
+  - verifier assurance
+  - SD-JWT
+  - reproducibility
+

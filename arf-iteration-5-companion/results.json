@@ -1,0 +1,37 @@
+{
+  "baseline_accepts": 2,
+  "claim_boundary": "Synthetic lifecycle-profile validation; not a wallet or RP implementation result, legal finding, or ARF conformance test.",
+  "corpus_id": "urn:tyche:eudi:arf-i5-lm-lifecycle:0.1",
+  "corpus_sha256": "18751c35ced9138ef3ce2220f2b148e17f3a43a138384ab48782659734c661d5",
+  "execution_control": "tyche-research-oracle-only",
+  "external_implementation_executions": 0,
+  "negative_rejects": 3,
+  "observations": [
+    {
+      "case_id": "L_BASELINE_INITIATED_001",
+      "reason": "PROFILE_VALID",
+      "verdict": "ACCEPT"
+    },
+    {
+      "case_id": "M_BASELINE_INITIATED_001",
+      "reason": "PROFILE_VALID",
+      "verdict": "ACCEPT"
+    },
+    {
+      "case_id": "L_CONTACT_NOT_REGISTRATION_BOUND_001",
+      "reason": "CONTACT_NOT_REGISTRATION_BOUND",
+      "verdict": "REJECT"
+    },
+    {
+      "case_id": "LM_INITIATED_REPRESENTED_AS_COMPLETED_001",
+      "reason": "LIFECYCLE_STATE_UNSUPPORTED",
+      "verdict": "REJECT"
+    },
+    {
+      "case_id": "M_REPORT_EVIDENCE_OVER_COLLECTION_001",
+      "reason": "SCHEMA_FORBIDDEN_FIELD",
+      "verdict": "REJECT"
+    }
+  ],
+  "schema_version": "0.1.0-research"
+}

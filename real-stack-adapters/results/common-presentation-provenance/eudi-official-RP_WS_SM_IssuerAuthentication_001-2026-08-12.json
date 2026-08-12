@@ -1,0 +1,58 @@
+{
+  "adapter_id": "eudi-official",
+  "baseline": {
+    "case_id": "COMMON-SDJWT-BASELINE-001",
+    "verdict": "ACCEPT"
+  },
+  "build_configuration_sha256": "ce70255567b599db197271bd7677edff39c3540dc53bffe1d3fd10f269aa3e92",
+  "claim_boundary": "Pinned-stack execution of one synthetic common compact presentation and one isolated issuer-signature mutation. The run demonstrates the stated library/verifier decision at this commit and configuration; it is not an independent reproduction, full RP-service workflow, product certification, or EUDIW/FCAF conformance result.",
+  "dependency_material": {
+    "paths": [
+      "build.gradle.kts",
+      "gradle/libs.versions.toml",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "settings.gradle.kts"
+    ],
+    "sha256": "05c836672ee19b32aa6d0c2d1209ccb4974957e75c0572059965302a449e2b22"
+  },
+  "evaluation_context": {
+    "audience": "https://rp.tyche.test",
+    "evaluated_at": "2026-08-12T08:00:05Z",
+    "nonce": "tyche-common-nonce-001"
+  },
+  "evidence_files": [
+    {
+      "path": "results/common-presentation-eudi-official-clone-2026-08-12.log",
+      "sha256": "7b67d85de35b85468b4b0ae52bdfdec47ed83482ea63ffd03460c751a82707de"
+    },
+    {
+      "path": "results/common-presentation-eudi-official-2026-08-12.log",
+      "sha256": "0f2601ad8eda8e1eaebb8308e382366c7069d718a1aa08c8d0dca011a37f1286"
+    }
+  ],
+  "executed_at": "2026-08-12T08:14:01.358150+00:00",
+  "execution_control": "tyche-controlled-local-run",
+  "input": {
+    "corpus_sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+    "format": "dc+sd-jwt",
+    "presentation_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a"
+  },
+  "mutation": {
+    "case_id": "RP_WS_SM_IssuerAuthentication_001",
+    "raw_reason": "ContainsInvalidJwt",
+    "verdict": "REJECT"
+  },
+  "normalized_reason": "INVALID_ISSUER_SIGNATURE",
+  "policy_configuration_sha256": "88bcea2a249cefe4c0e326538de28d0efb51753beacdfe4ed9757a38e718ac0b",
+  "production_source_unmodified": true,
+  "receipt_id": "urn:tyche:eudi:provenance:eudi-official:RP_WS_SM_IssuerAuthentication_001:2026-08-12",
+  "repository": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+  "schema_version": "1.0.0-research",
+  "source_commit": "db5442501ea06907e614377a20d802748e8bfddb",
+  "source_tree": "e04b44e81d2e052838bc2bbbc082006a213aa396",
+  "trust_source": {
+    "revision": "urn:tyche:eudi:common-sdjwt-presentation:001",
+    "sha256": "4cc80a8468dd11561d4c4e6146a278fb4f6e98fe74ab8d65fc8c961eacfe80f5",
+    "type": "synthetic-x5c-and-pinned-jwk"
+  }
+}
