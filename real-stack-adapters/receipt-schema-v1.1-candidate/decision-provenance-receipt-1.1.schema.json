@@ -1,0 +1,261 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:tyche:eudi:decision-provenance-receipt:schema:1.1.0",
+  "title": "Tyche EUDI decision-provenance receipt 1.1 research candidate",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "receipt_id",
+    "record_status",
+    "experiment_id",
+    "adapter_id",
+    "repository",
+    "source_commit",
+    "source_tree",
+    "dependency_material",
+    "build",
+    "policy_configuration_sha256",
+    "trust_source",
+    "evaluation_context",
+    "entry_point",
+    "decision_scope",
+    "input",
+    "observations",
+    "execution",
+    "evidence_files",
+    "claim_boundary"
+  ],
+  "properties": {
+    "schema_version": {"const": "1.1.0-research-candidate"},
+    "receipt_id": {"type": "string", "pattern": "^urn:tyche:eudi:provenance:.+$"},
+    "record_status": {
+      "enum": ["executed-observation", "schema-example-not-execution"]
+    },
+    "experiment_id": {"type": "string", "minLength": 1},
+    "adapter_id": {"type": "string", "minLength": 1},
+    "repository": {"type": "string", "format": "uri"},
+    "source_commit": {"type": "string", "pattern": "^[a-f0-9]{40,64}$"},
+    "source_tree": {"type": "string", "pattern": "^[a-f0-9]{40,64}$"},
+    "dependency_material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["paths", "sha256"],
+      "properties": {
+        "paths": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"type": "string", "minLength": 1}
+        },
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "build": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "configuration_sha256",
+        "production_source_unmodified",
+        "isolation"
+      ],
+      "properties": {
+        "configuration_sha256": {"$ref": "#/$defs/sha256"},
+        "production_source_unmodified": {"type": "boolean"},
+        "isolation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["applied", "description"],
+          "properties": {
+            "applied": {"type": "boolean"},
+            "description": {"type": "string", "minLength": 1},
+            "artifact_path": {"type": "string", "minLength": 1},
+            "artifact_sha256": {"$ref": "#/$defs/sha256"}
+          },
+          "allOf": [
+            {
+              "if": {"properties": {"applied": {"const": true}}},
+              "then": {"required": ["artifact_path", "artifact_sha256"]}
+            }
+          ]
+        }
+      }
+    },
+    "policy_configuration_sha256": {"$ref": "#/$defs/sha256"},
+    "trust_source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["type", "revision", "sha256"],
+      "properties": {
+        "type": {"type": "string", "minLength": 1},
+        "revision": {"type": "string", "minLength": 1},
+        "sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "evaluation_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["evaluated_at", "nonce", "audience"],
+      "properties": {
+        "evaluated_at": {"type": "string", "format": "date-time"},
+        "nonce": {"type": "string", "minLength": 1},
+        "audience": {"type": "string", "format": "uri"}
+      }
+    },
+    "entry_point": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "identifier", "source_path"],
+      "properties": {
+        "kind": {"enum": ["library-api", "service-endpoint", "command-line", "other"]},
+        "identifier": {"type": "string", "minLength": 1},
+        "source_path": {"type": "string", "minLength": 1},
+        "documentation_uri": {"type": "string", "format": "uri"}
+      }
+    },
+    "decision_scope": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checks_exercised", "checks_caller_supplied_or_bypassed", "notes"],
+      "properties": {
+        "checks_exercised": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/check"}
+        },
+        "checks_caller_supplied_or_bypassed": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {"$ref": "#/$defs/check"}
+        },
+        "notes": {"type": "string", "minLength": 1}
+      }
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["format", "corpus_sha256"],
+      "properties": {
+        "format": {"type": "string", "minLength": 1},
+        "corpus_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "observations": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "case_id",
+          "object_sha256",
+          "mutation_axis",
+          "applicability",
+          "oracle_expected_verdict",
+          "observed_verdict",
+          "comparison",
+          "raw_reason",
+          "normalized_reason"
+        ],
+        "properties": {
+          "case_id": {"type": "string", "minLength": 1},
+          "object_sha256": {"$ref": "#/$defs/sha256"},
+          "mutation_axis": {"type": "string", "minLength": 1},
+          "applicability": {
+            "enum": [
+              "IN_SCOPE",
+              "CALLER_SUPPLIED_POLICY",
+              "BYPASSED_BY_TEST_CONFIGURATION",
+              "NOT_REPRESENTABLE_AT_ENTRY_POINT"
+            ]
+          },
+          "oracle_expected_verdict": {"$ref": "#/$defs/verdict"},
+          "observed_verdict": {"$ref": "#/$defs/verdict"},
+          "comparison": {"enum": ["MATCH", "MISMATCH", "NOT_ASSESSED"]},
+          "raw_reason": {"type": "string", "minLength": 1},
+          "normalized_reason": {
+            "enum": [
+              "NONE",
+              "PARSE_ERROR",
+              "INVALID_ISSUER_SIGNATURE",
+              "INVALID_DISCLOSURE_BINDING",
+              "INVALID_HOLDER_BINDING",
+              "NONCE_MISMATCH",
+              "AUDIENCE_MISMATCH",
+              "FRESHNESS_FAILURE",
+              "STATUS_FAILURE",
+              "TRUST_FAILURE",
+              "POLICY_FAILURE",
+              "UNSUPPORTED",
+              "OTHER",
+              "NOT_AVAILABLE"
+            ]
+          },
+          "normalized_reason_detail": {"type": "string", "minLength": 1}
+        }
+      }
+    },
+    "execution": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "control",
+        "independent_of_tyche",
+        "controller_identifier",
+        "relationship_to_tyche",
+        "executed_at",
+        "environment_sha256"
+      ],
+      "properties": {
+        "control": {
+          "enum": [
+            "tyche-controlled-local-run",
+            "independent-implementation-owner-run",
+            "independent-third-party-run",
+            "automated-public-ci-run",
+            "other-disclosed-controller"
+          ]
+        },
+        "independent_of_tyche": {"type": "boolean"},
+        "controller_identifier": {"type": "string", "minLength": 1},
+        "relationship_to_tyche": {"type": "string", "minLength": 1},
+        "executed_at": {"type": "string", "format": "date-time"},
+        "environment_sha256": {"$ref": "#/$defs/sha256"}
+      }
+    },
+    "evidence_files": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["path", "sha256"],
+        "properties": {
+          "path": {"type": "string", "minLength": 1},
+          "sha256": {"$ref": "#/$defs/sha256"}
+        }
+      }
+    },
+    "claim_boundary": {"type": "string", "minLength": 1}
+  },
+  "$defs": {
+    "sha256": {"type": "string", "pattern": "^[a-f0-9]{64}$"},
+    "verdict": {"enum": ["ACCEPT", "REJECT", "ERROR", "INDETERMINATE", "NOT_RUN"]},
+    "check": {
+      "enum": [
+        "syntax-parsing",
+        "issuer-signature",
+        "disclosure-binding",
+        "holder-binding",
+        "nonce",
+        "audience",
+        "freshness",
+        "credential-status",
+        "issuer-trust",
+        "rp-registration",
+        "other"
+      ]
+    }
+  }
+}

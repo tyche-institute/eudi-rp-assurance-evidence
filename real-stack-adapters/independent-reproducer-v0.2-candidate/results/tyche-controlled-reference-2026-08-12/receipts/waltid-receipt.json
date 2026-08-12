@@ -1,0 +1,157 @@
+{
+  "adapter_id": "waltid",
+  "build": {
+    "configuration_sha256": "244f13b53baa0dc20d8a86998baf7d97cbcf80267ede479ff12e32cffbc0fd4d",
+    "isolation": {
+      "applied": false,
+      "description": "No build-isolation artifact applied."
+    },
+    "production_source_unmodified": true
+  },
+  "claim_boundary": "Selected pinned entry-point execution over synthetic inputs. Controller labels are self-asserted in this receipt. This is not a deployed workflow, vulnerability, certification or official conformance result.",
+  "decision_scope": {
+    "checks_caller_supplied_or_bypassed": [
+      "holder-binding",
+      "nonce",
+      "audience",
+      "freshness",
+      "issuer-trust"
+    ],
+    "checks_exercised": [
+      "syntax-parsing",
+      "issuer-signature"
+    ],
+    "notes": "The selected credential-signature policy does not consume verifier nonce, audience, evaluation time or the KB-JWT as presentation context."
+  },
+  "dependency_material": {
+    "paths": [
+      "build.gradle.kts",
+      "gradle/libs.versions.toml",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "settings.gradle.kts",
+      "waltid-libraries/credentials/waltid-verification-policies2/build.gradle.kts"
+    ],
+    "sha256": "65057950596dc5c7c096ef1722e91e62ed0f0c63cd6d75fba245ddce51a782d3"
+  },
+  "entry_point": {
+    "identifier": "CredentialSignaturePolicy.verify",
+    "kind": "library-api",
+    "source_path": "waltid-libraries/credentials/waltid-verification-policies2/src/commonMain/kotlin/id/walt/policies2/vc/policies/CredentialSignaturePolicy.kt"
+  },
+  "evaluation_context": {
+    "audience": "https://rp.tyche.test",
+    "evaluated_at": "2026-08-12T08:00:05Z",
+    "nonce": "tyche-common-nonce-001"
+  },
+  "evidence_files": [
+    {
+      "path": "raw/waltid-clone.log",
+      "sha256": "69f624d2063a55a6ace9f78ce2edc7c4b6830ffede438056d471f7079b2c70d1"
+    },
+    {
+      "path": "raw/waltid-test.log",
+      "sha256": "87b638fb3ee5defbc06749856a178c279949d48ce41e0714068181b9d70a84f7"
+    },
+    {
+      "path": "raw/waltid-test.xml",
+      "sha256": "4da57f96964793a49f0d6225494a57687a3914f607328f790240d30990511509"
+    },
+    {
+      "path": "environment.json",
+      "sha256": "e5df06e725e8ef9f6c20d140dc51e3f66ec7caf1c8a11b68d712accef4770974"
+    }
+  ],
+  "execution": {
+    "control": "tyche-controlled-local-run",
+    "controller_identifier": "Tyche Institute local validation",
+    "environment_sha256": "e5df06e725e8ef9f6c20d140dc51e3f66ec7caf1c8a11b68d712accef4770974",
+    "executed_at": "2026-08-12T10:06:00.740327+00:00",
+    "independent_of_tyche": false,
+    "relationship_to_tyche": "study author controlled the validation run"
+  },
+  "experiment_id": "urn:tyche:eudi:decision-scope-census:001",
+  "input": {
+    "corpus_sha256": "30fab5ed86987c156480ce6f64b5f5fa7a489b289406fdaaab7178252ab661d9",
+    "format": "dc+sd-jwt"
+  },
+  "observations": [
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_BASELINE_001",
+      "comparison": "MATCH",
+      "mutation_axis": "none",
+      "normalized_reason": "NONE",
+      "object_sha256": "5f44d7b96160024b6a505ca9077cb4f1d251f371e362e450d41e9b7e293fe9e3",
+      "observed_verdict": "ACCEPT",
+      "oracle_expected_verdict": "ACCEPT",
+      "raw_reason": "NONE"
+    },
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_ISSUER_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "issuer-signature",
+      "normalized_reason": "INVALID_ISSUER_SIGNATURE",
+      "object_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a",
+      "observed_verdict": "REJECT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "id.walt.crypto2.jose.InvalidJwsSignatureException: Invalid JWS signature"
+    },
+    {
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_KB_SIGNATURE_INVALID_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "key-binding-signature",
+      "normalized_reason": "NONE",
+      "object_sha256": "e3514386094d4caf2b27229fbb0be987c969e437bc64baa9b019cefb1f17d524",
+      "observed_verdict": "ACCEPT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    },
+    {
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_NONCE_MISMATCH_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "nonce",
+      "normalized_reason": "NONE",
+      "object_sha256": "29fc4f2c23c1984321cea4784e8d1b29984ac1b0ef41f114c4fd44e2cabb3134",
+      "observed_verdict": "ACCEPT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    },
+    {
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_AUDIENCE_MISMATCH_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "audience",
+      "normalized_reason": "NONE",
+      "object_sha256": "c3479aae45d8966aca229cd4374a0ea6115b7526f51388c277827925d1e5fae4",
+      "observed_verdict": "ACCEPT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    },
+    {
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_STALE_KB_IAT_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "freshness",
+      "normalized_reason": "NONE",
+      "object_sha256": "517beb4c0a5ff87e688ddd5a4d41fd5d836cce0f6092ab870a4cae12f6075c6d",
+      "observed_verdict": "ACCEPT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    }
+  ],
+  "policy_configuration_sha256": "6b6f1b884ffb26c3f4c8949b5d32e336c561d1a2f3438275638a94264c52d08b",
+  "receipt_id": "urn:tyche:eudi:provenance:waltid:independent-return:2026-08-12T10:06:00.740327+00:00",
+  "record_status": "executed-observation",
+  "repository": "https://github.com/walt-id/waltid-identity",
+  "schema_version": "1.1.0-research-candidate",
+  "source_commit": "f773918a3ad226ba7c0908d58941f18a3b89591d",
+  "source_tree": "c3724e5fa5e0672ec3948f3c852f8f49944cca26",
+  "trust_source": {
+    "revision": "urn:tyche:eudi:decision-scope-census:001",
+    "sha256": "30fab5ed86987c156480ce6f64b5f5fa7a489b289406fdaaab7178252ab661d9",
+    "type": "synthetic-x5c-and-pinned-jwk"
+  }
+}

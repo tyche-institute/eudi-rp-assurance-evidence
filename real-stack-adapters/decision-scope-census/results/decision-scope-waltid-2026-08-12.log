@@ -1,0 +1,188 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Parallel Configuration Cache is an incubating feature.
+Calculating task graph as no cached configuration is available for tasks: :waltid-libraries:credentials:waltid-verification-policies2:jvmTest --tests id.walt.policies2.vc.TycheDecisionScopeCensusTest
+> Task :build-logic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:generateExternalPluginSpecBuilders FROM-CACHE
+> Task :build-logic:extractPrecompiledScriptPluginPlugins FROM-CACHE
+> Task :build-logic:compilePluginsBlocks FROM-CACHE
+> Task :build-logic:generatePrecompiledScriptPluginAccessors FROM-CACHE
+> Task :build-logic:generateScriptPluginAdapters FROM-CACHE
+> Task :build-logic:compileKotlin FROM-CACHE
+> Task :build-logic:compileJava NO-SOURCE
+> Task :build-logic:pluginDescriptors
+> Task :build-logic:processResources
+> Task :build-logic:classes
+> Task :build-logic:jar
+
+> Configure project :waltid-libraries:web:waltid-web-data-fetching
+w: ⚠️ Unused Kotlin Source Sets
+The following Kotlin source sets were configured but not added to any Kotlin compilation:
+ * linuxMain
+ * macosMain
+ * mingwMain
+Solution: You can add a source set to a target's compilation by connecting it with the compilation's default source set using 'dependsOn'.
+See https://kotl.in/connecting-source-sets
+
+
+> Task :waltid-libraries:credentials:waltid-digital-credentials:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-cose:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-dcql:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-digital-credentials:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-x509:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:web:waltid-web-data-fetching:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-x509:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-cose:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-x509:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:web:waltid-web-data-fetching:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-dcql:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto2:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:waltid-did:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-jose:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-jose:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-crypto:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-crypto2:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:waltid-did:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-cose:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-dcql:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:web:waltid-web-data-fetching:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-jose:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:web:waltid-web-data-fetching:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:waltid-did:processJvmMainResources SKIPPED
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:waltid-did:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-digital-credentials:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-jose:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-dcql:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto2:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto2:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto:jvmProcessResources
+> Task :waltid-libraries:crypto:waltid-cose:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-x509:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-trust-registry:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-trust-registry:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-vical:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-crypto:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-vical:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-verification-policies2:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-vical:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-vical:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-trust-registry:jvmProcessResources
+> Task :waltid-libraries:credentials:waltid-trust-registry:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmTestProcessResources
+> Task :waltid-libraries:credentials:waltid-verification-policies2:processJvmTestResources SKIPPED
+> Task :waltid-libraries:web:waltid-web-data-fetching:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-dcql:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:web:waltid-web-data-fetching:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-dcql:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:web:waltid-web-data-fetching:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-dcql:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-trust-registry:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-trust-registry:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-trust-registry:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-dcql:jvmJar
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:crypto:waltid-crypto2:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:crypto:waltid-crypto2:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-crypto2:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:web:waltid-web-data-fetching:jvmJar
+> Task :waltid-libraries:credentials:waltid-trust-registry:jvmJar
+> Task :waltid-libraries:crypto:waltid-crypto:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:crypto:waltid-crypto:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-crypto:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:jvmJar
+> Task :waltid-libraries:crypto:waltid-crypto2:jvmJar
+> Task :waltid-libraries:crypto:waltid-crypto:jvmJar
+> Task :waltid-libraries:crypto:waltid-jose:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:crypto:waltid-jose:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-jose:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:crypto:waltid-jose:jvmJar
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:crypto:waltid-cose:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-cose:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:crypto:waltid-cose:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:crypto:waltid-cose:jvmJar
+> Task :waltid-libraries:waltid-did:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:waltid-did:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:waltid-did:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:crypto:waltid-x509:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:crypto:waltid-x509:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-x509:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:jvmJar
+> Task :waltid-libraries:crypto:waltid-x509:jvmJar
+> Task :waltid-libraries:credentials:waltid-vical:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-vical:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-vical:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:waltid-did:jvmJar
+> Task :waltid-libraries:credentials:waltid-vical:jvmJar
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:jvmJar
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:jvmJar
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:jvmJar
+> Task :waltid-libraries:credentials:waltid-digital-credentials:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-digital-credentials:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-digital-credentials:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-digital-credentials:jvmJar
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:jvmJar
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileKotlinJvm FROM-CACHE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmMainClasses UP-TO-DATE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileTestKotlinJvm
+w: file:///tmp/tyche-decision-scope-anduUD/waltid/waltid-libraries/credentials/waltid-verification-policies2/src/jvmTest/kotlin/id/walt/policies2/vc/status/signature/StatusListSignatureVerifierTest.kt:240:67 No cast needed.
+w: file:///tmp/tyche-decision-scope-anduUD/waltid/waltid-libraries/credentials/waltid-verification-policies2/src/jvmTest/kotlin/id/walt/policies2/vc/status/signature/StatusListSignatureVerifierTest.kt:259:67 No cast needed.
+w: file:///tmp/tyche-decision-scope-anduUD/waltid/waltid-libraries/credentials/waltid-verification-policies2/src/jvmTest/kotlin/id/walt/policies2/vc/status/signature/StatusListSignatureVerifierTest.kt:275:26 'fun Key.toCoseSigner(algorithm: String? = ...): CoseSigner' is deprecated. Use the crypto2 Key.toCoseSigner(Int) overload.
+
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileJvmTestJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmTestClasses
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmTest
+
+[Incubating] Problems report is available at: file:///tmp/tyche-decision-scope-anduUD/waltid/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 20s
+68 actionable tasks: 44 executed, 24 from cache
+Configuration cache entry stored.

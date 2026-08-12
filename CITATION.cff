@@ -1,9 +1,8 @@
 cff-version: 1.2.0
-message: "If you use this evidence packet, please cite it and the associated article."
+message: "This is an unpublished local release candidate; cite a public release when available."
 title: "EUDI RP Assurance Evidence"
 type: software
-version: 0.1.2
-date-released: 2026-08-12
+version: 0.2.0-rc1
 authors:
   - family-names: Sokolov
     given-names: Anton
@@ -14,5 +13,5 @@ keywords:
   - EUDI Wallet
   - relying party
   - verifier assurance
-  - SD-JWT
-  - reproducibility
+  - independent reproduction
+  - decision provenance

@@ -1,0 +1,156 @@
+{
+  "adapter_id": "eudi-official",
+  "build": {
+    "configuration_sha256": "05a124318817e26bac803a26e4f05ac4ff869acb44ddca693ade9674d36c6895",
+    "isolation": {
+      "applied": false,
+      "description": "No build-isolation artifact applied."
+    },
+    "production_source_unmodified": true
+  },
+  "claim_boundary": "Selected pinned entry-point execution over synthetic inputs. Controller labels are self-asserted in this receipt. This is not a deployed workflow, vulnerability, certification or official conformance result.",
+  "decision_scope": {
+    "checks_caller_supplied_or_bypassed": [
+      "issuer-trust"
+    ],
+    "checks_exercised": [
+      "syntax-parsing",
+      "issuer-signature",
+      "holder-binding",
+      "nonce",
+      "audience",
+      "freshness"
+    ],
+    "notes": "Trust-chain decision is neutralised by the test callback; presentation-context checks use the selected validator entry point."
+  },
+  "dependency_material": {
+    "paths": [
+      "build.gradle.kts",
+      "gradle/libs.versions.toml",
+      "gradle/wrapper/gradle-wrapper.properties",
+      "settings.gradle.kts"
+    ],
+    "sha256": "05c836672ee19b32aa6d0c2d1209ccb4974957e75c0572059965302a449e2b22"
+  },
+  "entry_point": {
+    "identifier": "SdJwtVcValidator.validate",
+    "kind": "library-api",
+    "source_path": "src/main/kotlin/eu/europa/ec/eudi/verifier/endpoint/adapter/out/sdjwtvc/SdJwtVcValidator.kt"
+  },
+  "evaluation_context": {
+    "audience": "https://rp.tyche.test",
+    "evaluated_at": "2026-08-12T08:00:05Z",
+    "nonce": "tyche-common-nonce-001"
+  },
+  "evidence_files": [
+    {
+      "path": "raw/eudi-official-clone.log",
+      "sha256": "ea451dbb46355b6b41f516531c20f08a0222d1f89acc9468e81f5a410715eb4e"
+    },
+    {
+      "path": "raw/eudi-official-test.log",
+      "sha256": "0c46d2600aefc99f39180854ad3e86fa6e58d4f03a63e2b4a61ffe9ed5558d12"
+    },
+    {
+      "path": "raw/eudi-official-test.xml",
+      "sha256": "f67c26f6bc5484de628d1ea452ec29f001ed75ed753d04b93ed6a410703743cf"
+    },
+    {
+      "path": "environment.json",
+      "sha256": "e5df06e725e8ef9f6c20d140dc51e3f66ec7caf1c8a11b68d712accef4770974"
+    }
+  ],
+  "execution": {
+    "control": "tyche-controlled-local-run",
+    "controller_identifier": "Tyche Institute local validation",
+    "environment_sha256": "e5df06e725e8ef9f6c20d140dc51e3f66ec7caf1c8a11b68d712accef4770974",
+    "executed_at": "2026-08-12T10:06:00.740327+00:00",
+    "independent_of_tyche": false,
+    "relationship_to_tyche": "study author controlled the validation run"
+  },
+  "experiment_id": "urn:tyche:eudi:decision-scope-census:001",
+  "input": {
+    "corpus_sha256": "30fab5ed86987c156480ce6f64b5f5fa7a489b289406fdaaab7178252ab661d9",
+    "format": "dc+sd-jwt"
+  },
+  "observations": [
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_BASELINE_001",
+      "comparison": "MATCH",
+      "mutation_axis": "none",
+      "normalized_reason": "NONE",
+      "object_sha256": "5f44d7b96160024b6a505ca9077cb4f1d251f371e362e450d41e9b7e293fe9e3",
+      "observed_verdict": "ACCEPT",
+      "oracle_expected_verdict": "ACCEPT",
+      "raw_reason": "NONE"
+    },
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_ISSUER_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "issuer-signature",
+      "normalized_reason": "INVALID_ISSUER_SIGNATURE",
+      "object_sha256": "b4d876c9dfd24d80178eb3b68716d0b62c2432b742a3d701c9fc0f6abd4f203a",
+      "observed_verdict": "REJECT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidJwt"
+    },
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_KB_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "key-binding-signature",
+      "normalized_reason": "INVALID_HOLDER_BINDING",
+      "object_sha256": "e3514386094d4caf2b27229fbb0be987c969e437bc64baa9b019cefb1f17d524",
+      "observed_verdict": "REJECT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_NONCE_MISMATCH_001",
+      "comparison": "MATCH",
+      "mutation_axis": "nonce",
+      "normalized_reason": "NONCE_MISMATCH",
+      "object_sha256": "29fc4f2c23c1984321cea4784e8d1b29984ac1b0ef41f114c4fd44e2cabb3134",
+      "observed_verdict": "REJECT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_AUDIENCE_MISMATCH_001",
+      "comparison": "MATCH",
+      "mutation_axis": "audience",
+      "normalized_reason": "AUDIENCE_MISMATCH",
+      "object_sha256": "c3479aae45d8966aca229cd4374a0ea6115b7526f51388c277827925d1e5fae4",
+      "observed_verdict": "REJECT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_STALE_KB_IAT_001",
+      "comparison": "MATCH",
+      "mutation_axis": "freshness",
+      "normalized_reason": "FRESHNESS_FAILURE",
+      "object_sha256": "517beb4c0a5ff87e688ddd5a4d41fd5d836cce0f6092ab870a4cae12f6075c6d",
+      "observed_verdict": "REJECT",
+      "oracle_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    }
+  ],
+  "policy_configuration_sha256": "65ffed9d399259f80a8d607909b37e5dbc001c00892072e88ea8ff122c341597",
+  "receipt_id": "urn:tyche:eudi:provenance:eudi-official:independent-return:2026-08-12T10:06:00.740327+00:00",
+  "record_status": "executed-observation",
+  "repository": "https://github.com/eu-digital-identity-wallet/eudi-srv-verifier-endpoint",
+  "schema_version": "1.1.0-research-candidate",
+  "source_commit": "db5442501ea06907e614377a20d802748e8bfddb",
+  "source_tree": "e04b44e81d2e052838bc2bbbc082006a213aa396",
+  "trust_source": {
+    "revision": "urn:tyche:eudi:decision-scope-census:001",
+    "sha256": "30fab5ed86987c156480ce6f64b5f5fa7a489b289406fdaaab7178252ab661d9",
+    "type": "synthetic-x5c-and-pinned-jwk"
+  }
+}
