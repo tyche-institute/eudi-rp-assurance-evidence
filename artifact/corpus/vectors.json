@@ -1,0 +1,1978 @@
+{
+  "corpus_id": "urn:tyche:eudi:rp-assurance-corpus:0.1.0",
+  "generated_by": "generate_vectors.py",
+  "vector_count": 36,
+  "vectors": [
+    {
+      "id": "RPV-001",
+      "title": "conformant baseline",
+      "expected_verdict": "ACCEPT",
+      "expected_reason": "A_PROFILE_CONFORMANT",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "84d5cd337701b61bae834294bead17a69172d92c49f1e4e3763ebca0e12dff2a"
+    },
+    {
+      "id": "RPV-002",
+      "title": "conformant second registered purpose",
+      "expected_verdict": "ACCEPT",
+      "expected_reason": "A_PROFILE_CONFORMANT",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "account-opening",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "d773c127f653af6b4f6986eb2cd56d105c086cbc0c579e17f1e25d6c1efcc829"
+    },
+    {
+      "id": "RPV-003",
+      "title": "conformant two-attribute request",
+      "expected_verdict": "ACCEPT",
+      "expected_reason": "A_PROFILE_CONFORMANT",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "family_name",
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "e77d2b482b2a5b27ed2114acd79d63fc78478217dddea406fda4d8c92b9e46e9"
+    },
+    {
+      "id": "RPV-004",
+      "title": "presentation cannot be parsed",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_PARSE_INVALID",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": false,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "0fcc61904ee20336f040c4662d27575af53dc2637a87191499b9bbe2e446e1f9"
+    },
+    {
+      "id": "RPV-005",
+      "title": "relying party is absent from register",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_RP_UNREGISTERED",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": false,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "59a239bb3a330918b1d6ac363181a5ecfef04354d8721a9386733a9d3a53753b"
+    },
+    {
+      "id": "RPV-006",
+      "title": "relying-party registration suspended",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_RP_SUSPENDED",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "suspended",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "f4c100a92e78e9600fd2bbbb5e56ad3bc8fed97a89d6dfa206254a4e96365829"
+    },
+    {
+      "id": "RPV-007",
+      "title": "relying-party registration cancelled",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_RP_SUSPENDED",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "cancelled",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "14732c31acca764ee1676a4edf0d8c6222654f36e771d9b0edc4fd2d69a725bb"
+    },
+    {
+      "id": "RPV-008",
+      "title": "authenticated RP differs from registered RP",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_RP_IDENTITY_MISMATCH",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:other.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "9c10cee3896a4522f7af2a3795123610dd2ba4d2d1bea71d05f36c26181b91d8"
+    },
+    {
+      "id": "RPV-009",
+      "title": "purpose not declared at registration",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_PURPOSE_MISMATCH",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "employment-screening",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "3d3b461f3ae544cd7e2c6ebf4655296cfb08ffae728fac41354cc979ecc201af"
+    },
+    {
+      "id": "RPV-010",
+      "title": "one requested attribute not registered",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_ATTRIBUTE_OVER_REQUEST",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18",
+            "date_of_birth"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "5fe86dba18509250b2d996de2473f3cf98ef024e18bcb4c02ee433df402ac88f"
+    },
+    {
+      "id": "RPV-011",
+      "title": "empty registered attribute set with non-empty request",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_ATTRIBUTE_OVER_REQUEST",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "5327ce14ea644bc95083650cbd94f78f7cba6ffc18c9629e1f51bcf5d249fa01"
+    },
+    {
+      "id": "RPV-012",
+      "title": "issuer signature invalid",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_ISSUER_SIGNATURE_INVALID",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": false,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "c6da17886a172515f4628f16bd20145707e5a5338b71e909582fb2fae1b6fb79"
+    },
+    {
+      "id": "RPV-013",
+      "title": "a disclosed value is not issuer-bound",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_DISCLOSURE_UNBOUND",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": false,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "960aff2955e0a74786b44548eef45dea32d741036573a39e1735b94352ef437e"
+    },
+    {
+      "id": "RPV-014",
+      "title": "holder binding invalid",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_HOLDER_BINDING_INVALID",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": false,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "f843bdd599cd9e3c9232488fdfc1db2b013b11330a98995269b11bd3eb24157b"
+    },
+    {
+      "id": "RPV-015",
+      "title": "audience mismatch",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_AUDIENCE_MISMATCH",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:other.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "13ce97da7356724ff4c68a3fdcb38d824e580f44c15b8429b43643563ac09251"
+    },
+    {
+      "id": "RPV-016",
+      "title": "nonce mismatch",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_NONCE_MISMATCH",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-replayed",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "4810602085cee96098add56a5782363049515da534287bc73b5d38725a3dfee6"
+    },
+    {
+      "id": "RPV-017",
+      "title": "presentation one second beyond freshness window",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_PRESENTATION_STALE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000301,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "87ff45b7ac42bc43d5a668cbd589c7eb0341d7a02a442435bdb5e5b6fea69e2b"
+    },
+    {
+      "id": "RPV-018",
+      "title": "presentation exactly at freshness boundary",
+      "expected_verdict": "ACCEPT",
+      "expected_reason": "A_PROFILE_CONFORMANT",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000300,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "7dfd39c928e30d60655a1bb32ae7a89bda2b2a435969cd4fbda850a5f8ec2c92"
+    },
+    {
+      "id": "RPV-019",
+      "title": "presentation from the future",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_PRESENTATION_STALE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000121,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "7da481f4d9398fed27a98afdb058459a65b48bde0bbf7468822459fca57e1932"
+    },
+    {
+      "id": "RPV-020",
+      "title": "credential revoked",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_CREDENTIAL_INACTIVE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "revoked",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "a54f0c620f4abbda77dd8d6dec14969bbdda094558120dfd080055d18b4b4134"
+    },
+    {
+      "id": "RPV-021",
+      "title": "credential suspended",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_CREDENTIAL_INACTIVE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "suspended",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "a959fe0990c6add24f930f9a97670157d20e66c882189fff09e91a20b8af00d1"
+    },
+    {
+      "id": "RPV-022",
+      "title": "issuer outside applicable trust policy",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_ISSUER_UNTRUSTED",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": false
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "0ab223e27fe0465c9e2c277e262de78dea129bfd74ec369a9dd6a4dc8fa1417c"
+    },
+    {
+      "id": "RPV-023",
+      "title": "reliance uses an unapproved attribute",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_USE_EXCEEDS_APPROVAL",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "a42375bef1b05530d5d340989b6e9cdf0fa83dc62b9c83712a83e42e39d39c7d"
+    },
+    {
+      "id": "RPV-024",
+      "title": "lawful basis not recorded",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_LAWFUL_BASIS_UNRECORDED",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": false,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "16e183714bd18e6de479c7d6b50ab3fb699d6734ded4b88c994bca06179f2b99"
+    },
+    {
+      "id": "RPV-025",
+      "title": "decision log incomplete",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_AUDIT_EVIDENCE_INCOMPLETE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": false
+        }
+      },
+      "transaction_sha256": "d6335c112d944ca1d584f10787836273fc4b50865bdbfc3848ca43e03203daca"
+    },
+    {
+      "id": "RPV-026",
+      "title": "verifier version missing",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_AUDIT_EVIDENCE_INCOMPLETE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "3c917a852dd65717ba191fc63df37bdcfb70f8fa5e8bba4e9d27a95063e3231f"
+    },
+    {
+      "id": "RPV-027",
+      "title": "policy version missing",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_AUDIT_EVIDENCE_INCOMPLETE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "2b870b969f630bbfa4e5f2595ffb67b9417600dbc2716b21002042e43e81e920"
+    },
+    {
+      "id": "RPV-028",
+      "title": "multiple failures: registration precedes cryptography",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_RP_UNREGISTERED",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": false,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": false,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "d0732ab8118333d32ae4ccf60c29ee2fa84c4b1d071b1b3189901a9a9ccf158a"
+    },
+    {
+      "id": "RPV-029",
+      "title": "multiple failures: over-request precedes nonce",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_ATTRIBUTE_OVER_REQUEST",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "date_of_birth"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "wrong",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "eea70e45a0909d6717dc9bab0986fc4088f1a6fdd56fe20b3dfb7c200332f210"
+    },
+    {
+      "id": "RPV-030",
+      "title": "multiple failures: signature precedes stale",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_ISSUER_SIGNATURE_INVALID",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": false,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000999,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "ec68745b2e9e941bb329dd2052e553b669cedaa287b8437a3f5a202fc7c6d777"
+    },
+    {
+      "id": "RPV-031",
+      "title": "multiple failures: reliance over-use precedes audit",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_USE_EXCEEDS_APPROVAL",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "family_name"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": false
+        }
+      },
+      "transaction_sha256": "4e1b3f20d024c31634a0b416bdfeed4deaec13ad89577288f1155ab768c224c8"
+    },
+    {
+      "id": "RPV-032",
+      "title": "attribute order is not semantically significant",
+      "expected_verdict": "ACCEPT",
+      "expected_reason": "A_PROFILE_CONFORMANT",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "family_name",
+            "age_over_18"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "fdb29fbd73e6b06589530d2555a5f96a5e67e327078b9ccc4cfd1163eb51a75c"
+    },
+    {
+      "id": "RPV-033",
+      "title": "no attributes requested or used",
+      "expected_verdict": "ACCEPT",
+      "expected_reason": "A_PROFILE_CONFORMANT",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": []
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [],
+          "used_attributes": [],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "47ad9be194fa8c06c65531b7a0560177330bb293caeedadd48ffa403c10d38de"
+    },
+    {
+      "id": "RPV-034",
+      "title": "empty registered purpose list",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_PURPOSE_MISMATCH",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "58fce10b704b43967642748f2f7da8e917200efc31dad91f18d3a9ec3d9c5abf"
+    },
+    {
+      "id": "RPV-035",
+      "title": "negative age is stale",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_PRESENTATION_STALE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000999,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "verifier-under-test/1.0.0",
+          "policy_version": "rp-policy/2026-08-11",
+          "decision_log_complete": true
+        }
+      },
+      "transaction_sha256": "a6b8a5521f7668dbfc814b3b18f38e54c769ffe0e7ae10bfd0da78e856c69fa4"
+    },
+    {
+      "id": "RPV-036",
+      "title": "audit record absent although protocol checks pass",
+      "expected_verdict": "REJECT",
+      "expected_reason": "R_AUDIT_EVIDENCE_INCOMPLETE",
+      "transaction": {
+        "rp": {
+          "registration_id": "EE-RP-000042",
+          "registered": true,
+          "registration_status": "active",
+          "registered_rp_id": "x509_hash:rp.example",
+          "authenticated_rp_id": "x509_hash:rp.example",
+          "registered_purposes": [
+            "age-assurance",
+            "account-opening"
+          ],
+          "transaction_purpose": "age-assurance",
+          "registered_attributes": [
+            "age_over_18",
+            "family_name"
+          ],
+          "requested_attributes": [
+            "age_over_18"
+          ]
+        },
+        "presentation": {
+          "parse_ok": true,
+          "issuer_signature_valid": true,
+          "all_disclosures_bound": true,
+          "holder_binding_valid": true,
+          "expected_audience": "x509_hash:rp.example",
+          "audience": "x509_hash:rp.example",
+          "expected_nonce": "n-7f3c",
+          "nonce": "n-7f3c",
+          "issued_at": 1800000000,
+          "evaluated_at_epoch": 1800000120,
+          "max_age_seconds": 300,
+          "credential_status": "active",
+          "issuer_trusted": true
+        },
+        "reliance": {
+          "approved_attributes": [
+            "age_over_18"
+          ],
+          "used_attributes": [
+            "age_over_18"
+          ],
+          "lawful_basis_recorded": true,
+          "verifier_version": "",
+          "policy_version": "",
+          "decision_log_complete": false
+        }
+      },
+      "transaction_sha256": "a5724ac7afa56ca9e26f4d75f542b5897381cee57b402901c2d7b76cd781dd5b"
+    }
+  ]
+}

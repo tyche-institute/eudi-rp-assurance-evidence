@@ -1,0 +1,77 @@
+{
+  "schema_version": "1.1.0-research-candidate",
+  "receipt_id": "urn:tyche:eudi:provenance:example:independent-disagreement",
+  "record_status": "schema-example-not-execution",
+  "experiment_id": "SCHEMA-EXAMPLE-ONLY",
+  "adapter_id": "external-example-adapter",
+  "repository": "https://example.invalid/external-repository",
+  "source_commit": "5555555555555555555555555555555555555555",
+  "source_tree": "6666666666666666666666666666666666666666",
+  "dependency_material": {
+    "paths": ["dependencies.lock"],
+    "sha256": "7777777777777777777777777777777777777777777777777777777777777777"
+  },
+  "build": {
+    "configuration_sha256": "8888888888888888888888888888888888888888888888888888888888888888",
+    "production_source_unmodified": true,
+    "isolation": {
+      "applied": true,
+      "description": "Illustrative build-only isolation artifact.",
+      "artifact_path": "build/example.patch",
+      "artifact_sha256": "9999999999999999999999999999999999999999999999999999999999999999"
+    }
+  },
+  "policy_configuration_sha256": "abababababababababababababababababababababababababababababababab",
+  "trust_source": {
+    "type": "synthetic-example",
+    "revision": "external-schema-example",
+    "sha256": "cdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcdcd"
+  },
+  "evaluation_context": {
+    "evaluated_at": "2026-08-12T00:00:00Z",
+    "nonce": "external-schema-example-nonce",
+    "audience": "https://example.invalid/external-relying-party"
+  },
+  "entry_point": {
+    "kind": "service-endpoint",
+    "identifier": "POST /example/verify",
+    "source_path": "service/routes/example"
+  },
+  "decision_scope": {
+    "checks_exercised": ["issuer-signature"],
+    "checks_caller_supplied_or_bypassed": ["nonce", "audience", "issuer-trust"],
+    "notes": "Illustrates a narrower decision scope and a contradictory observation."
+  },
+  "input": {
+    "format": "dc+sd-jwt",
+    "corpus_sha256": "efefefefefefefefefefefefefefefefefefefefefefefefefefefefefefefef"
+  },
+  "observations": [
+    {
+      "case_id": "EXAMPLE-MUTATION",
+      "object_sha256": "1212121212121212121212121212121212121212121212121212121212121212",
+      "mutation_axis": "issuer-signature",
+      "applicability": "IN_SCOPE",
+      "oracle_expected_verdict": "REJECT",
+      "observed_verdict": "ACCEPT",
+      "comparison": "MISMATCH",
+      "raw_reason": "example implementation reported success",
+      "normalized_reason": "NONE"
+    }
+  ],
+  "execution": {
+    "control": "independent-implementation-owner-run",
+    "independent_of_tyche": true,
+    "controller_identifier": "external-example",
+    "relationship_to_tyche": "no affiliation; schema example only",
+    "executed_at": "2026-08-12T00:00:00Z",
+    "environment_sha256": "3434343434343434343434343434343434343434343434343434343434343434"
+  },
+  "evidence_files": [
+    {
+      "path": "schema-example-not-an-evidence-file.log",
+      "sha256": "5656565656565656565656565656565656565656565656565656565656565656"
+    }
+  ],
+  "claim_boundary": "Schema example only. The contradiction is invented solely to test representability and is not an implementation finding."
+}

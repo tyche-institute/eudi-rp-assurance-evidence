@@ -1,0 +1,698 @@
+{
+  "claim_boundary": "Sensitivity to one declared rule-omission operator in three study-authored paths. Not completeness, independence, real-stack behavior or conformance evidence.",
+  "corpus_sha256": "be634b573fc15ca0bbd40b3e68e550e4170be671f8e3dbe3abd8bce69a6553ff",
+  "generated_mutants": 51,
+  "invalid_mutants": 0,
+  "killed_mutants": 51,
+  "mutation_score": 1.0,
+  "operator": "RULE_CONDITION_FALSE",
+  "per_implementation": {
+    "javascript": {
+      "generated": 17,
+      "invalid": 0,
+      "killed": 17,
+      "mutation_score": 1.0,
+      "survived": 0,
+      "valid": 17
+    },
+    "jq": {
+      "generated": 17,
+      "invalid": 0,
+      "killed": 17,
+      "mutation_score": 1.0,
+      "survived": 0,
+      "valid": 17
+    },
+    "python": {
+      "generated": 17,
+      "invalid": 0,
+      "killed": 17,
+      "mutation_score": 1.0,
+      "survived": 0,
+      "valid": 17
+    }
+  },
+  "rows": [
+    {
+      "changed_outcome_count": 3,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-010",
+        "RPV-011",
+        "RPV-029"
+      ],
+      "mutant_id": "python:R_ATTRIBUTE_OVER_REQUEST:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ATTRIBUTE_OVER_REQUEST"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-015"
+      ],
+      "mutant_id": "python:R_AUDIENCE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_AUDIENCE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 4,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-025",
+        "RPV-026",
+        "RPV-027",
+        "RPV-036"
+      ],
+      "mutant_id": "python:R_AUDIT_EVIDENCE_INCOMPLETE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_AUDIT_EVIDENCE_INCOMPLETE"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-020",
+        "RPV-021"
+      ],
+      "mutant_id": "python:R_CREDENTIAL_INACTIVE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_CREDENTIAL_INACTIVE"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-013"
+      ],
+      "mutant_id": "python:R_DISCLOSURE_UNBOUND:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_DISCLOSURE_UNBOUND"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-014"
+      ],
+      "mutant_id": "python:R_HOLDER_BINDING_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_HOLDER_BINDING_INVALID"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-012",
+        "RPV-030"
+      ],
+      "mutant_id": "python:R_ISSUER_SIGNATURE_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ISSUER_SIGNATURE_INVALID"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-022"
+      ],
+      "mutant_id": "python:R_ISSUER_UNTRUSTED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ISSUER_UNTRUSTED"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-024"
+      ],
+      "mutant_id": "python:R_LAWFUL_BASIS_UNRECORDED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_LAWFUL_BASIS_UNRECORDED"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-016"
+      ],
+      "mutant_id": "python:R_NONCE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_NONCE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-004"
+      ],
+      "mutant_id": "python:R_PARSE_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PARSE_INVALID"
+    },
+    {
+      "changed_outcome_count": 3,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-017",
+        "RPV-019",
+        "RPV-035"
+      ],
+      "mutant_id": "python:R_PRESENTATION_STALE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PRESENTATION_STALE"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-009",
+        "RPV-034"
+      ],
+      "mutant_id": "python:R_PURPOSE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PURPOSE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-008"
+      ],
+      "mutant_id": "python:R_RP_IDENTITY_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_IDENTITY_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-006",
+        "RPV-007"
+      ],
+      "mutant_id": "python:R_RP_SUSPENDED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_SUSPENDED"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-005",
+        "RPV-028"
+      ],
+      "mutant_id": "python:R_RP_UNREGISTERED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_UNREGISTERED"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "python",
+      "killed_by": [
+        "RPV-023",
+        "RPV-031"
+      ],
+      "mutant_id": "python:R_USE_EXCEEDS_APPROVAL:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_USE_EXCEEDS_APPROVAL"
+    },
+    {
+      "changed_outcome_count": 3,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-010",
+        "RPV-011",
+        "RPV-029"
+      ],
+      "mutant_id": "javascript:R_ATTRIBUTE_OVER_REQUEST:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ATTRIBUTE_OVER_REQUEST"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-015"
+      ],
+      "mutant_id": "javascript:R_AUDIENCE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_AUDIENCE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 4,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-025",
+        "RPV-026",
+        "RPV-027",
+        "RPV-036"
+      ],
+      "mutant_id": "javascript:R_AUDIT_EVIDENCE_INCOMPLETE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_AUDIT_EVIDENCE_INCOMPLETE"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-020",
+        "RPV-021"
+      ],
+      "mutant_id": "javascript:R_CREDENTIAL_INACTIVE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_CREDENTIAL_INACTIVE"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-013"
+      ],
+      "mutant_id": "javascript:R_DISCLOSURE_UNBOUND:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_DISCLOSURE_UNBOUND"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-014"
+      ],
+      "mutant_id": "javascript:R_HOLDER_BINDING_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_HOLDER_BINDING_INVALID"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-012",
+        "RPV-030"
+      ],
+      "mutant_id": "javascript:R_ISSUER_SIGNATURE_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ISSUER_SIGNATURE_INVALID"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-022"
+      ],
+      "mutant_id": "javascript:R_ISSUER_UNTRUSTED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ISSUER_UNTRUSTED"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-024"
+      ],
+      "mutant_id": "javascript:R_LAWFUL_BASIS_UNRECORDED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_LAWFUL_BASIS_UNRECORDED"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-016"
+      ],
+      "mutant_id": "javascript:R_NONCE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_NONCE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-004"
+      ],
+      "mutant_id": "javascript:R_PARSE_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PARSE_INVALID"
+    },
+    {
+      "changed_outcome_count": 3,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-017",
+        "RPV-019",
+        "RPV-035"
+      ],
+      "mutant_id": "javascript:R_PRESENTATION_STALE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PRESENTATION_STALE"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-009",
+        "RPV-034"
+      ],
+      "mutant_id": "javascript:R_PURPOSE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PURPOSE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-008"
+      ],
+      "mutant_id": "javascript:R_RP_IDENTITY_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_IDENTITY_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-006",
+        "RPV-007"
+      ],
+      "mutant_id": "javascript:R_RP_SUSPENDED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_SUSPENDED"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-005",
+        "RPV-028"
+      ],
+      "mutant_id": "javascript:R_RP_UNREGISTERED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_UNREGISTERED"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "javascript",
+      "killed_by": [
+        "RPV-023",
+        "RPV-031"
+      ],
+      "mutant_id": "javascript:R_USE_EXCEEDS_APPROVAL:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_USE_EXCEEDS_APPROVAL"
+    },
+    {
+      "changed_outcome_count": 3,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-010",
+        "RPV-011",
+        "RPV-029"
+      ],
+      "mutant_id": "jq:R_ATTRIBUTE_OVER_REQUEST:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ATTRIBUTE_OVER_REQUEST"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-015"
+      ],
+      "mutant_id": "jq:R_AUDIENCE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_AUDIENCE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 4,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-025",
+        "RPV-026",
+        "RPV-027",
+        "RPV-036"
+      ],
+      "mutant_id": "jq:R_AUDIT_EVIDENCE_INCOMPLETE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_AUDIT_EVIDENCE_INCOMPLETE"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-020",
+        "RPV-021"
+      ],
+      "mutant_id": "jq:R_CREDENTIAL_INACTIVE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_CREDENTIAL_INACTIVE"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-013"
+      ],
+      "mutant_id": "jq:R_DISCLOSURE_UNBOUND:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_DISCLOSURE_UNBOUND"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-014"
+      ],
+      "mutant_id": "jq:R_HOLDER_BINDING_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_HOLDER_BINDING_INVALID"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-012",
+        "RPV-030"
+      ],
+      "mutant_id": "jq:R_ISSUER_SIGNATURE_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ISSUER_SIGNATURE_INVALID"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-022"
+      ],
+      "mutant_id": "jq:R_ISSUER_UNTRUSTED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_ISSUER_UNTRUSTED"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-024"
+      ],
+      "mutant_id": "jq:R_LAWFUL_BASIS_UNRECORDED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_LAWFUL_BASIS_UNRECORDED"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-016"
+      ],
+      "mutant_id": "jq:R_NONCE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_NONCE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-004"
+      ],
+      "mutant_id": "jq:R_PARSE_INVALID:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PARSE_INVALID"
+    },
+    {
+      "changed_outcome_count": 3,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-017",
+        "RPV-019",
+        "RPV-035"
+      ],
+      "mutant_id": "jq:R_PRESENTATION_STALE:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PRESENTATION_STALE"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-009",
+        "RPV-034"
+      ],
+      "mutant_id": "jq:R_PURPOSE_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_PURPOSE_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 1,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-008"
+      ],
+      "mutant_id": "jq:R_RP_IDENTITY_MISMATCH:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_IDENTITY_MISMATCH"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-006",
+        "RPV-007"
+      ],
+      "mutant_id": "jq:R_RP_SUSPENDED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_SUSPENDED"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-005",
+        "RPV-028"
+      ],
+      "mutant_id": "jq:R_RP_UNREGISTERED:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_RP_UNREGISTERED"
+    },
+    {
+      "changed_outcome_count": 2,
+      "error": "",
+      "implementation": "jq",
+      "killed_by": [
+        "RPV-023",
+        "RPV-031"
+      ],
+      "mutant_id": "jq:R_USE_EXCEEDS_APPROVAL:condition-false",
+      "operator": "RULE_CONDITION_FALSE",
+      "status": "KILLED",
+      "target_reason": "R_USE_EXCEEDS_APPROVAL"
+    }
+  ],
+  "rules": 17,
+  "schema_version": "0.1.0-research",
+  "source_sha256": {
+    "javascript": "aab0f758aab21b9d28f7b2c0bcc6a03e5db1234168bed8b7023cd7846f653cbe",
+    "jq": "b60cab6df2fd3b4b9c79efadc1efe1172e93cccbe76b6778bd7516416cc83dc9",
+    "python": "cd097e7abba90455964701d6d2287e31aed949841db47af9fedba61f1572fc6f"
+  },
+  "surviving_mutants": 0,
+  "valid_mutants": 51,
+  "vectors": 36
+}

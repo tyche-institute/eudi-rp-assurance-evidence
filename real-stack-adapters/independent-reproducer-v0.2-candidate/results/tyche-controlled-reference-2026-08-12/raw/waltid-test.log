@@ -1,0 +1,344 @@
+Downloading https://services.gradle.org/distributions/gradle-9.5.1-bin.zip
+.............10%.............20%..............30%.............40%.............50%..............60%.............70%..............80%.............90%.............100%
+
+Welcome to Gradle 9.5.1!
+
+Here are the highlights of this release:
+ - Task provenance in reports and failure messages
+ - Type-safe accessors for precompiled Kotlin Settings plugins
+
+For more details see https://docs.gradle.org/9.5.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+Parallel Configuration Cache is an incubating feature.
+Calculating task graph as no cached configuration is available for tasks: :waltid-libraries:credentials:waltid-verification-policies2:jvmTest --tests id.walt.policies2.vc.TycheIndependentReturnTest
+> Task :build-logic:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :build-logic:generateExternalPluginSpecBuilders
+> Task :build-logic:extractPrecompiledScriptPluginPlugins
+> Task :build-logic:generateScriptPluginAdapters
+> Task :build-logic:pluginDescriptors
+> Task :build-logic:processResources
+> Task :build-logic:compilePluginsBlocks
+> Task :build-logic:generatePrecompiledScriptPluginAccessors
+> Task :build-logic:compileKotlin
+> Task :build-logic:compileJava NO-SOURCE
+> Task :build-logic:classes
+> Task :build-logic:jar
+
+> Configure project :waltid-libraries:crypto:waltid-crypto2
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto2/build.gradle.kts:100:5: 'fun macosX64(): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+
+> Configure project :waltid-libraries:crypto:waltid-jose
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-jose/build.gradle.kts:37:5: 'fun macosX64(): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+
+> Configure project :waltid-libraries:web:waltid-web-data-fetching
+w: ⚠️ Unused Kotlin Source Sets
+The following Kotlin source sets were configured but not added to any Kotlin compilation:
+ * linuxMain
+ * macosMain
+ * mingwMain
+Solution: You can add a source set to a target's compilation by connecting it with the compilation's default source set using 'dependsOn'.
+See https://kotl.in/connecting-source-sets
+
+
+> Configure project :waltid-libraries:crypto:waltid-crypto2-examples
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto2-examples/build.gradle.kts:165:5: 'fun macosX64(name: String = ..., configure: KotlinNativeTargetWithHostTests.() -> Unit = ...): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+
+> Configure project :waltid-libraries:crypto:waltid-crypto2-kms
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto2-kms/build.gradle.kts:37:5: 'fun macosX64(): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+
+> Configure project :waltid-libraries:crypto:waltid-crypto2-migration-v1
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto2-migration-v1/build.gradle.kts:21:5: 'fun macosX64(): KotlinNativeTargetWithHostTests' is deprecated. Target will be removed in a future release. See: https://kotl.in/native-targets-tiers.
+
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-dcql:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-cose:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-dcql:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-cose:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-jose:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:web:waltid-web-data-fetching:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-crypto2:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-x509:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:web:waltid-web-data-fetching:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:waltid-did:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-dcql:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-digital-credentials:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:waltid-did:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-crypto2:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-jose:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-jose:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-dcql:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-cose:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-crypto2:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto2:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-x509:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:web:waltid-web-data-fetching:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-x509:processJvmMainResources SKIPPED
+> Task :waltid-libraries:waltid-did:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-trust-registry:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:crypto:waltid-jose:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-x509:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials:processJvmMainResources SKIPPED
+> Task :waltid-libraries:waltid-did:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:processJvmMainResources SKIPPED
+> Task :waltid-libraries:crypto:waltid-cose:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:web:waltid-web-data-fetching:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:processJvmMainResources SKIPPED
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto:jvmProcessResources
+> Task :waltid-libraries:credentials:waltid-trust-registry:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:crypto:waltid-crypto:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-vical:jvmProcessResources NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-vical:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-verification-policies2:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-vical:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:kmpPartiallyResolvedDependenciesChecker
+> Task :waltid-libraries:credentials:waltid-vical:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:checkKotlinGradlePluginConfigurationErrors SKIPPED
+> Task :waltid-libraries:credentials:waltid-trust-registry:jvmProcessResources
+> Task :waltid-libraries:credentials:waltid-trust-registry:processJvmMainResources SKIPPED
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmTestProcessResources
+> Task :waltid-libraries:credentials:waltid-verification-policies2:processJvmTestResources SKIPPED
+
+> Task :waltid-libraries:credentials:waltid-dcql:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-dcql/src/commonMain/kotlin/id/walt/dcql/DcqlMatcher.kt:57:78 Elvis operator (?:) always returns the left operand of non-nullable type 'CredentialQueryMeta'.
+
+> Task :waltid-libraries:web:waltid-web-data-fetching:compileKotlinJvm
+> Task :waltid-libraries:web:waltid-web-data-fetching:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-dcql:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-dcql:jvmMainClasses
+> Task :waltid-libraries:web:waltid-web-data-fetching:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-dcql:jvmJar
+> Task :waltid-libraries:web:waltid-web-data-fetching:jvmJar
+> Task :waltid-libraries:credentials:waltid-trust-registry:compileKotlinJvm
+> Task :waltid-libraries:credentials:waltid-trust-registry:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-trust-registry:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-trust-registry:jvmJar
+> Task :waltid-libraries:crypto:waltid-crypto2:compileKotlinJvm
+> Task :waltid-libraries:crypto:waltid-crypto2:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-crypto2:jvmMainClasses
+> Task :waltid-libraries:crypto:waltid-crypto2:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/dataelement/DataElement.kt:110:69 Redundant call of conversion method.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/dataelement/DataElement.kt:111:71 Redundant call of conversion method.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/dataelement/DataElement.kt:158:21 'when' is exhaustive so 'else' is redundant here.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/dataretrieval/DeviceRequest.kt:18:18 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'StringElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/dataretrieval/DeviceRequest.kt:19:28 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'EncodedCBORElement?'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/devicesigned/DeviceSigned.kt:15:21 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'EncodedCBORElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/docrequest/ItemsRequest.kt:18:18 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'StringElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/docrequest/ItemsRequest.kt:19:21 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'MapElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/docrequest/MDocRequest.kt:17:23 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'EncodedCBORElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/DeviceKeyInfo.kt:15:20 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'MapElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/DeviceKeyInfo.kt:16:28 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'MapElement?'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/DeviceKeyInfo.kt:17:18 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'MapElement?'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/MSO.kt:19:18 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'StringElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/MSO.kt:20:26 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'StringElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/MSO.kt:21:23 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'MapElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/MSO.kt:23:18 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'StringElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/ValidityInfo.kt:17:17 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'TDateElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/ValidityInfo.kt:18:20 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'TDateElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/ValidityInfo.kt:19:21 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'TDateElement'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/commonMain/kotlin/id/walt/mdoc/mso/ValidityInfo.kt:20:25 Class 'DataElementSerializer', which is serializer for type 'DataElement', is applied here to type 'TDateElement?'. This may lead to errors or incorrect behavior.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials/src/jvmMain/kotlin/id/walt/mdoc/SimpleCOSECryptoProvider.kt:92:22 No cast needed.
+
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials:jvmJar
+
+> Task :waltid-libraries:crypto:waltid-crypto:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto/src/jvmAndroidMain/kotlin/id/walt/crypto/keys/jwk/JWKKey.jvm.kt:563:10 This declaration needs opt-in. Its usage should be marked with '@kotlinx.serialization.ExperimentalSerializationApi' or '@OptIn(kotlinx.serialization.ExperimentalSerializationApi::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto/src/jvmAndroidMain/kotlin/id/walt/crypto/keys/jwk/JWKKey.jvm.kt:565:10 This declaration needs opt-in. Its usage should be marked with '@kotlinx.serialization.ExperimentalSerializationApi' or '@OptIn(kotlinx.serialization.ExperimentalSerializationApi::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto/src/jvmAndroidMain/kotlin/id/walt/crypto/keys/jwk/JWKKey.jvm.kt:650:46 'static field kem_P384_SHA348: Short' is deprecated. Deprecated in Java.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-crypto/src/jvmAndroidMain/kotlin/id/walt/crypto/keys/jwk/JWKKey.jvm.kt:659:18 'static field kem_P384_SHA348: Short' is deprecated. Deprecated in Java.
+
+> Task :waltid-libraries:crypto:waltid-jose:compileKotlinJvm
+> Task :waltid-libraries:crypto:waltid-jose:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-jose:jvmMainClasses
+> Task :waltid-libraries:crypto:waltid-jose:jvmJar
+> Task :waltid-libraries:crypto:waltid-crypto:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-crypto:jvmMainClasses
+> Task :waltid-libraries:crypto:waltid-crypto:jvmJar
+
+> Task :waltid-libraries:crypto:waltid-cose:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:156:71 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:158:29 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:158:51 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:211:19 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:211:36 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:211:79 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/commonMain/kotlin/id/walt/cose/CoseHeaders.kt:242:72 This declaration needs opt-in. Its usage should be marked with '@kotlin.ExperimentalUnsignedTypes' or '@OptIn(kotlin.ExperimentalUnsignedTypes::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-cose/src/jvmMain/kotlin/id/walt/cose/JWKKeyCoseTransform.jvm.kt:13:47 'fun ellipticCurveForKeyType(keyType: KeyType): Int' is deprecated. Use EncodedKey.Jwk.toCoseKey() with a crypto2 JWK.
+
+> Task :waltid-libraries:crypto:waltid-cose:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-cose:jvmMainClasses
+> Task :waltid-libraries:crypto:waltid-cose:jvmJar
+
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/sdjwt/waltid-sdjwt/src/commonMain/kotlin/id/walt/sdjwt/metadata/type/SdJwtVcTypeMetadataDraft04.kt:18:1 Custom serializer 'SDJWTVCTypeMetadataDraft04Serializer' is private, while the type 'SdJwtVcTypeMetadataDraft04' is not. This can cause 'serializer not found' errors on use sites. Consider aligning the visibilities.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/sdjwt/waltid-sdjwt/src/commonMain/kotlin/id/walt/sdjwt/metadata/type/SdJwtVcTypeMetadataDraft13.kt:18:1 Custom serializer 'SDJWTVCTypeMetadataDraft13Serializer' is private, while the type 'SdJwtVcTypeMetadataDraft13' is not. This can cause 'serializer not found' errors on use sites. Consider aligning the visibilities.
+
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:jvmMainClasses
+> Task :waltid-libraries:sdjwt:waltid-sdjwt:jvmJar
+
+> Task :waltid-libraries:crypto:waltid-x509:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/CertificateSigningRequest.kt:90:54 'val publicKey: Key' is deprecated. Use crypto2PublicKey().
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/CertificateSigningRequest.kt:102:16 'expect suspend fun platformBuildCertificateSigningRequest(profileData: CertificateSigningRequestProfileData, signingKey: Key): CertificateSigningRequestBundle' is deprecated. Use CertificateSigningRequestBuilder.buildDer with a crypto2 key and an explicit SignatureAlgorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/GenericX509Certificate.kt:44:54 'val publicKey: Key' is deprecated. Use crypto2PublicKey().
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/GenericX509Certificate.kt:61:16 'expect suspend fun platformBuildGenericX509Certificate(profileData: GenericX509CertificateProfileData, subjectPublicKey: Key, signingKey: Key): GenericX509CertificateBundle' is deprecated. Use GenericX509CertificateBuilder.buildDer with crypto2 keys and an explicit SignatureAlgorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/documentsigner/builder/DocumentSignerCertificateBuilder.kt:44:25 'data class IACASignerSpecification : Any' is deprecated. Use Crypto2IACASignerSpecification with a crypto2 key and explicit signature algorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/documentsigner/builder/DocumentSignerCertificateBuilder.kt:86:25 'data class IACASignerSpecification : Any' is deprecated. Use Crypto2IACASignerSpecification with a crypto2 key and explicit signature algorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/documentsigner/builder/DocumentSignerCertificateBuilder.kt:88:9 'suspend fun build(profileData: DocumentSignerCertificateProfileData, publicKey: Key, iacaSignerSpec: IACASignerSpecification): DocumentSignerCertificateBundle' is deprecated. Use buildDer with crypto2 keys and Crypto2IACASignerSpecification.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/documentsigner/builder/DocumentSignerCertificateBuilder.kt:103:21 'data class IACASignerSpecification : Any' is deprecated. Use Crypto2IACASignerSpecification with a crypto2 key and explicit signature algorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/documentsigner/validate/DocumentSignerValidator.kt:39:55 'val publicKey: Key' is deprecated. Use crypto2PublicKey.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/documentsigner/validate/DocumentSignerValidator.kt:86:59 'val publicKey: Key' is deprecated. Use crypto2PublicKey.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/iaca/builder/IACACertificateBuilder.kt:71:9 'suspend fun build(profileData: IACACertificateProfileData, signingKey: Key): IACACertificateBundle' is deprecated. Use buildDer with a crypto2 key and an explicit SignatureAlgorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/iaca/validate/IACAValidator.kt:36:41 'val publicKey: Key' is deprecated. Use crypto2PublicKey.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/commonMain/kotlin/id/walt/x509/iso/iaca/validate/IACAValidator.kt:65:53 'val publicKey: Key' is deprecated. Use crypto2PublicKey.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/crypto/waltid-x509/src/jvmIosMain/kotlin/id/walt/x509/iso/documentsigner/builder/DocumentSignerCertificateBuilder.signum.kt:23:21 'data class IACASignerSpecification : Any' is deprecated. Use Crypto2IACASignerSpecification with a crypto2 key and explicit signature algorithm.
+
+> Task :waltid-libraries:crypto:waltid-x509:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:crypto:waltid-x509:jvmMainClasses
+> Task :waltid-libraries:crypto:waltid-x509:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-vical:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-vical/src/commonMain/kotlin/id/walt/vical/VicalModels.kt:45:78 'suspend fun getKey(): Result<JWKKey>' is deprecated. Use getCrypto2Key().
+
+> Task :waltid-libraries:credentials:waltid-vical:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-vical:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-vical:jvmJar
+
+> Task :waltid-libraries:waltid-did:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/DidService.kt:177:32 'suspend fun resolveToKey(did: String): Result<Key>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/DidService.kt:188:32 'suspend fun resolveToKeys(did: String): Result<Set<Key>>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/registrar/local/cheqd/DidCheqdRegistrar.kt:125:9 Expression is unused.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/resolver/LocalResolver.kt:60:32 'suspend fun resolveToKey(did: String): Result<Key>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/resolver/LocalResolver.kt:68:32 'suspend fun resolveToKeys(did: String): Result<Set<Key>>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/resolver/UniresolverResolver.kt:63:67 'suspend fun resolveToKeys(did: String): Result<Set<Key>>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/resolver/local/DidJwkResolver.kt:23:25 'suspend fun resolveToKey(did: String): Result<Key>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/resolver/local/DidWebResolver.kt:49:16 'suspend fun resolveToKeys(did: String): Result<Set<Key>>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/waltid-did/src/commonMain/kotlin/id/walt/did/dids/resolver/local/LocalResolverMethod.kt:34:9 'suspend fun resolveToKey(did: String): Result<Key>' is deprecated. Use Crypto2DidKeyResolver or Crypto2DidService for key resolution.
+
+> Task :waltid-libraries:waltid-did:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:waltid-did:jvmMainClasses
+> Task :waltid-libraries:waltid-did:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-credential-key-resolver/src/commonMain/kotlin/id/walt/credentials/keyresolver/JwtKeyResolver.kt:47:36 'suspend fun resolveKeyFromDid(issuerId: String, kid: String? = ...): Key' is deprecated. Use Crypto2JwtKeyResolver.resolveFromDid.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-credential-key-resolver/src/commonMain/kotlin/id/walt/credentials/keyresolver/JwtKeyResolver.kt:51:39 'suspend fun resolveKeyFromX5c(x5c: JsonArray): JWKKey' is deprecated. Use resolveJwkFromX5c for crypto2 key material.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-credential-key-resolver/src/commonMain/kotlin/id/walt/credentials/keyresolver/JwtKeyResolver.kt:55:45 'suspend fun resolveKeyFromWellKnown(issuerId: String, header: JsonObject?): JWKKey' is deprecated. Use resolveJwkFromWellKnown for crypto2 key material.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-credential-key-resolver/src/commonMain/kotlin/id/walt/credentials/keyresolver/resolvers/DidKeyResolver.kt:19:31 'suspend fun resolveToKeys(did: String): Result<Set<Key>>' is deprecated. Use the crypto2 key resolution API.
+
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-credential-key-resolver:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/issuance/Issuer.kt:49:16 'suspend fun signJws(issuerKey: Key, issuerId: String?, issuerKid: String? = ..., subjectDid: String, additionalJwtHeader: Map<String, JsonElement> = ..., additionalJwtOptions: Map<String, JsonElement> = ...): String' is deprecated. Use the crypto2 overload accepting a Key and JwsAlgorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/issuance/Issuer.kt:107:15 'suspend fun signJws(issuerKey: Key, issuerId: String?, issuerKid: String? = ..., subjectDid: String, additionalJwtHeader: Map<String, JsonElement> = ..., additionalJwtOptions: Map<String, JsonElement> = ...): String' is deprecated. Use the crypto2 overload accepting a Key and JwsAlgorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/issuance/Issuer.kt:110:25 'suspend fun getKidHeader(issuerKey: Key, issuerDid: String? = ...): String' is deprecated. Use getKidHeader with a crypto2 Key.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/issuance/Issuer.kt:179:15 'suspend fun signSdJwt(issuerKey: Key, issuerId: String, issuerKid: String?, subjectDid: String, disclosureMap: SDMap, additionalJwtHeaders: Map<String, JsonElement> = ..., additionalJwtOptions: Map<String, JsonElement> = ...): String' is deprecated. Use the crypto2 overload accepting a Key and JwsAlgorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/issuance/Issuer.kt:182:25 'suspend fun getKidHeader(issuerKey: Key, issuerDid: String? = ...): String' is deprecated. Use getKidHeader with a crypto2 Key.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:74:48 'data class KeyInfo : Any' is deprecated. Use Crypto2KeyInfo.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:79:34 'suspend fun resolveFromJwt(jwtHeader: JsonObject?, jwtPayload: JsonObject): Key?' is deprecated. Use Crypto2JwtKeyResolver.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:81:16 'constructor(keyId: String, key: Key): JwsSignatureScheme.KeyInfo' is deprecated. Use Crypto2KeyInfo.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:89:49 'data class KeysInfo : Any' is deprecated. Use Crypto2KeyInfo.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:94:34 'suspend fun resolveFromJwt(jwtHeader: JsonObject?, jwtPayload: JsonObject): Key?' is deprecated. Use Crypto2JwtKeyResolver.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:96:16 'constructor(keyId: String, keys: Set<Key>): JwsSignatureScheme.KeysInfo' is deprecated. Use Crypto2KeyInfo.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/schemes/JwsSignatureScheme.kt:189:24 'suspend fun getIssuerKeysInfo(jws: String): JwsSignatureScheme.KeysInfo' is deprecated. Use getIssuerCrypto2KeyInfo.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-w3c-credentials/src/commonMain/kotlin/id/walt/w3c/vc/vcs/W3CVC.kt:139:37 'suspend fun sign(data: JsonObject, key: Key, jwtHeaders: Map<String, JsonElement> = ..., jwtOptions: Map<String, JsonElement> = ..., wrapInVc: Boolean = ...): String' is deprecated. Use the crypto2 overload accepting a Key and JwsAlgorithm.
+
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-w3c-credentials:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/credsdata/MdocData.kt:26:21 Condition is always 'true'.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/crypto/MdocCrypto.kt:74:41 'fun Key.toCoseVerifier(algorithm: String? = ...): CoseVerifier' is deprecated. Use the crypto2 Key.toCoseVerifier(Int) overload.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/crypto/MdocCrypto.kt:154:46 'fun Key.getSharedSecret(other: Key): ByteArray' is deprecated. Use the crypto2 Key.getSharedSecret overload.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/issuance/MdocIssuer.kt:78:36 'fun Key.toCoseSigner(algorithm: String? = ...): CoseSigner' is deprecated. Use the crypto2 Key.toCoseSigner(Int) overload.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/issuance/MdocIssuer.kt:79:62 'fun KeyType.toCoseAlgorithm(): Int?' is deprecated. Use KeySpec.defaultCoseSignatureAlgorithm() with a crypto2 key specification.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/issuance/MdocIssuer.kt:232:16 'suspend fun signMsoForIssuerSignedObjects(namespaceIssuerSignedItems: Map<String, List<IssuerSignedItem>>, issuerKey: Key, issuerCertificate: List<CoseCertificate>, holderKey: CoseKey, docType: String, validFrom: Instant? = ..., validUntil: Instant = ..., status: Status? = ..., digestAlgorithm: String = ..., protectedHeaderX5u: String? = ..., protectedHeaderX5t: CoseCertHash? = ...): IssuerSigned' is deprecated. Use the crypto2 Key overload with an explicit signature algorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/issuance/MdocIssuer.kt:301:16 'suspend fun signMsoForIssuerSignedObjects(namespaceIssuerSignedItems: Map<String, List<IssuerSignedItem>>, issuerKey: Key, issuerCertificate: List<CoseCertificate>, holderKey: CoseKey, docType: String, validFrom: Instant? = ..., validUntil: Instant = ..., status: Status? = ..., digestAlgorithm: String = ..., protectedHeaderX5u: String? = ..., protectedHeaderX5t: CoseCertHash? = ...): IssuerSigned' is deprecated. Use the crypto2 Key overload with an explicit signature algorithm.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/SessionTranscript.kt:53:28 'data class IsoOID4VPHandover : Any' is deprecated. Legacy 18013-7 handling.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/SessionTranscript.kt:90:23 'data class IsoOID4VPHandover : Any' is deprecated. Legacy 18013-7 handling.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/document/IssuerSigned.kt:91:34 This declaration needs opt-in. Its usage should be marked with '@kotlinx.serialization.ExperimentalSerializationApi' or '@OptIn(kotlinx.serialization.ExperimentalSerializationApi::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/document/IssuerSigned.kt:91:59 Unchecked cast of 'KSerializer<*>' to 'KSerializer<Any?>'.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/document/IssuerSigned.kt:91:86 This declaration needs opt-in. Its usage should be marked with '@kotlinx.serialization.ExperimentalSerializationApi' or '@OptIn(kotlinx.serialization.ExperimentalSerializationApi::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/document/IssuerSigned.kt:93:33 This declaration needs opt-in. Its usage should be marked with '@kotlinx.serialization.ExperimentalSerializationApi' or '@OptIn(kotlinx.serialization.ExperimentalSerializationApi::class)'
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/document/IssuerSigned.kt:115:40 'data class ParsedIssuerAuth : Any' is deprecated. Use ParsedIssuerAuthCrypto2.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/document/IssuerSigned.kt:127:16 'constructor(x5c: List<String>, signerKey: Key): IssuerSigned.ParsedIssuerAuth' is deprecated. Use ParsedIssuerAuthCrypto2.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/elements/DeviceSignedList.kt:33:59 Unchecked cast of 'KSerializer<*>' to 'KSerializer<Any?>'.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-mdoc-credentials2/src/commonMain/kotlin/id/walt/mdoc/objects/handover/isooid4vp/IsoOID4VPHandover.kt:50:23 'data class IsoOID4VPHandover : Any' is deprecated. Legacy 18013-7 handling.
+
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-mdoc-credentials2:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-digital-credentials:compileKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/CredentialParser.kt:248:54 'suspend fun getParsedIssuerAuth(): IssuerSigned.ParsedIssuerAuth' is deprecated. Use getParsedIssuerAuthCrypto2().
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/mdocs/MdocsCredential.kt:84:94 'fun Key.toCoseVerifier(algorithm: String? = ...): CoseVerifier' is deprecated. Use the crypto2 Key.toCoseVerifier(Int) overload.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/mdocs/MdocsCredential.kt:111:30 'suspend fun verifyMdocSignature(document: Document, issuerKey: Key): Unit' is deprecated. Use the shared crypto2 mdoc issuer-authentication verification API.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/mdocs/MdocsCredential.kt:128:25 'suspend fun getSignerKey(): Key' is deprecated. Use getSignerCrypto2Key().
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/mdocs/MdocsCredential.kt:129:16 'suspend fun verify(publicKey: Key): Result<JsonElement>' is deprecated. Use verifyCrypto2(publicKey, allowedAlgorithms).
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/sdjwtvc/SdJwtCredential.kt:55:47 'suspend fun getJwtBasedIssuer(credentialData: JsonObject): Key?' is deprecated. Use getCrypto2JwtBasedIssuer(credentialData, resolver).
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/sdjwtvc/SdJwtCredential.kt:83:32 'suspend fun resolveToKey(did: String): Result<Key>' is deprecated. Use Crypto2DidService.resolveToKeys; there is no equivalent single-key selection API.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/w3c/AbstractW3C.kt:31:70 'suspend fun getJwtBasedIssuer(credentialData: JsonObject): Key?' is deprecated. Use getCrypto2JwtBasedIssuer(credentialData, resolver).
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/formats/w3c/AbstractW3C.kt:75:56 'fun Key.toCoseVerifier(algorithm: String? = ...): CoseVerifier' is deprecated. Use the crypto2 Key.toCoseVerifier(Int) overload.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/presentations/formats/JwtVcJsonPresentation.kt:50:40 'suspend fun resolveFromJwt(jwtHeader: JsonObject?, jwtPayload: JsonObject): Key?' is deprecated. Use Crypto2JwtKeyResolver.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/presentations/formats/JwtVcJsonPresentation.kt:54:48 Unnecessary non-null assertion (!!) on a non-null receiver of type 'Key'.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-digital-credentials/src/commonMain/kotlin/id/walt/credentials/signatures/JwtBasedSignature.kt:17:24 'suspend fun resolveFromJwt(jwtHeader: JsonObject?, jwtPayload: JsonObject): Key?' is deprecated. Use Crypto2JwtKeyResolver.
+
+> Task :waltid-libraries:credentials:waltid-digital-credentials:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-digital-credentials:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-digital-credentials:jvmJar
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:compileKotlinJvm
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-digital-credentials-examples:jvmJar
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileKotlinJvm
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileJvmMainJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmMainClasses
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmJar
+
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileTestKotlinJvm
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-verification-policies2/src/jvmTest/kotlin/id/walt/policies2/vc/status/signature/StatusListSignatureVerifierTest.kt:240:67 No cast needed.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-verification-policies2/src/jvmTest/kotlin/id/walt/policies2/vc/status/signature/StatusListSignatureVerifierTest.kt:259:67 No cast needed.
+w: file:///tmp/tyche-independent-return-Tl380Y/waltid/waltid-libraries/credentials/waltid-verification-policies2/src/jvmTest/kotlin/id/walt/policies2/vc/status/signature/StatusListSignatureVerifierTest.kt:275:26 'fun Key.toCoseSigner(algorithm: String? = ...): CoseSigner' is deprecated. Use the crypto2 Key.toCoseSigner(Int) overload.
+
+> Task :waltid-libraries:credentials:waltid-verification-policies2:compileJvmTestJava NO-SOURCE
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmTestClasses
+> Task :waltid-libraries:credentials:waltid-verification-policies2:jvmTest
+
+[Incubating] Problems report is available at: file:///tmp/tyche-independent-return-Tl380Y/waltid/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 3m 20s
+68 actionable tasks: 68 executed
+Configuration cache entry stored.

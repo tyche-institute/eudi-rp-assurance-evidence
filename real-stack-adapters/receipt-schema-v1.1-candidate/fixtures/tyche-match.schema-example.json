@@ -1,0 +1,75 @@
+{
+  "schema_version": "1.1.0-research-candidate",
+  "receipt_id": "urn:tyche:eudi:provenance:example:tyche-match",
+  "record_status": "schema-example-not-execution",
+  "experiment_id": "SCHEMA-EXAMPLE-ONLY",
+  "adapter_id": "example-adapter",
+  "repository": "https://example.invalid/repository",
+  "source_commit": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "source_tree": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+  "dependency_material": {
+    "paths": ["example.lock"],
+    "sha256": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+  },
+  "build": {
+    "configuration_sha256": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd",
+    "production_source_unmodified": true,
+    "isolation": {
+      "applied": false,
+      "description": "Schema example; no build was performed."
+    }
+  },
+  "policy_configuration_sha256": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee",
+  "trust_source": {
+    "type": "synthetic-example",
+    "revision": "schema-example",
+    "sha256": "ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+  },
+  "evaluation_context": {
+    "evaluated_at": "2026-08-12T00:00:00Z",
+    "nonce": "schema-example-nonce",
+    "audience": "https://example.invalid/relying-party"
+  },
+  "entry_point": {
+    "kind": "library-api",
+    "identifier": "Example.verify",
+    "source_path": "src/Example.kt"
+  },
+  "decision_scope": {
+    "checks_exercised": ["issuer-signature", "nonce", "audience"],
+    "checks_caller_supplied_or_bypassed": ["issuer-trust"],
+    "notes": "Schema example only; decision scope is illustrative."
+  },
+  "input": {
+    "format": "dc+sd-jwt",
+    "corpus_sha256": "1111111111111111111111111111111111111111111111111111111111111111"
+  },
+  "observations": [
+    {
+      "case_id": "EXAMPLE-BASELINE",
+      "object_sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "mutation_axis": "none",
+      "applicability": "IN_SCOPE",
+      "oracle_expected_verdict": "ACCEPT",
+      "observed_verdict": "ACCEPT",
+      "comparison": "MATCH",
+      "raw_reason": "example accepted",
+      "normalized_reason": "NONE"
+    }
+  ],
+  "execution": {
+    "control": "tyche-controlled-local-run",
+    "independent_of_tyche": false,
+    "controller_identifier": "schema-example",
+    "relationship_to_tyche": "schema example; no controller",
+    "executed_at": "2026-08-12T00:00:00Z",
+    "environment_sha256": "3333333333333333333333333333333333333333333333333333333333333333"
+  },
+  "evidence_files": [
+    {
+      "path": "schema-example-not-an-evidence-file.txt",
+      "sha256": "4444444444444444444444444444444444444444444444444444444444444444"
+    }
+  ],
+  "claim_boundary": "Schema example only. No execution, implementation result or independent evidence is claimed."
+}

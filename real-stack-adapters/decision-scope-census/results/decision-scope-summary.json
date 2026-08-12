@@ -1,0 +1,200 @@
+{
+  "claim_boundary": "Selected entry-point decision-scope census under Tyche control. ACCEPT outside an entry point's represented scope is not an implementation failure.",
+  "corpus_sha256": "30fab5ed86987c156480ce6f64b5f5fa7a489b289406fdaaab7178252ab661d9",
+  "executed_at": "2026-08-12T09:26:11.364438+00:00",
+  "independent_executions": 0,
+  "matrix": [
+    {
+      "adapter_id": "eudi-official",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_BASELINE_001",
+      "comparison": "MATCH",
+      "mutation_axis": "none",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "ACCEPT",
+      "raw_reason": "NONE"
+    },
+    {
+      "adapter_id": "eudi-official",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_ISSUER_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "issuer-signature",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidJwt"
+    },
+    {
+      "adapter_id": "eudi-official",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_KB_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "key-binding-signature",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "adapter_id": "eudi-official",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_NONCE_MISMATCH_001",
+      "comparison": "MATCH",
+      "mutation_axis": "nonce",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "adapter_id": "eudi-official",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_AUDIENCE_MISMATCH_001",
+      "comparison": "MATCH",
+      "mutation_axis": "audience",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "adapter_id": "eudi-official",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_STALE_KB_IAT_001",
+      "comparison": "MATCH",
+      "mutation_axis": "freshness",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "ContainsInvalidKeyBindingJwt"
+    },
+    {
+      "adapter_id": "multipaz",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_BASELINE_001",
+      "comparison": "MATCH",
+      "mutation_axis": "none",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "ACCEPT",
+      "raw_reason": "NONE"
+    },
+    {
+      "adapter_id": "multipaz",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_ISSUER_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "issuer-signature",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "org.multipaz.crypto.SignatureVerificationException: Error validating issuer signature"
+    },
+    {
+      "adapter_id": "multipaz",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_KB_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "key-binding-signature",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "org.multipaz.crypto.SignatureVerificationException: Error validating KB signature"
+    },
+    {
+      "adapter_id": "multipaz",
+      "applicability": "CALLER_SUPPLIED_POLICY",
+      "case_id": "SCOPE_NONCE_MISMATCH_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "nonce",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "java.lang.IllegalStateException: Failed verification of nonce"
+    },
+    {
+      "adapter_id": "multipaz",
+      "applicability": "CALLER_SUPPLIED_POLICY",
+      "case_id": "SCOPE_AUDIENCE_MISMATCH_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "audience",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "java.lang.IllegalStateException: Failed verification of audience"
+    },
+    {
+      "adapter_id": "multipaz",
+      "applicability": "CALLER_SUPPLIED_POLICY",
+      "case_id": "SCOPE_STALE_KB_IAT_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "freshness",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "java.lang.IllegalStateException: Failed verification of creationTime"
+    },
+    {
+      "adapter_id": "waltid",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_BASELINE_001",
+      "comparison": "MATCH",
+      "mutation_axis": "none",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "ACCEPT",
+      "raw_reason": "NONE"
+    },
+    {
+      "adapter_id": "waltid",
+      "applicability": "IN_SCOPE",
+      "case_id": "SCOPE_ISSUER_SIGNATURE_INVALID_001",
+      "comparison": "MATCH",
+      "mutation_axis": "issuer-signature",
+      "observed_verdict": "REJECT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "id.walt.crypto2.jose.InvalidJwsSignatureException: Invalid JWS signature"
+    },
+    {
+      "adapter_id": "waltid",
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_KB_SIGNATURE_INVALID_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "key-binding-signature",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    },
+    {
+      "adapter_id": "waltid",
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_NONCE_MISMATCH_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "nonce",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    },
+    {
+      "adapter_id": "waltid",
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_AUDIENCE_MISMATCH_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "audience",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    },
+    {
+      "adapter_id": "waltid",
+      "applicability": "NOT_REPRESENTABLE_AT_ENTRY_POINT",
+      "case_id": "SCOPE_STALE_KB_IAT_001",
+      "comparison": "NOT_ASSESSED",
+      "mutation_axis": "freshness",
+      "observed_verdict": "ACCEPT",
+      "profile_expected_verdict": "REJECT",
+      "raw_reason": "NONE"
+    }
+  ],
+  "observations": 18,
+  "receipts": [
+    "eudi-official-decision-scope-census-2026-08-12.json",
+    "multipaz-decision-scope-census-2026-08-12.json",
+    "waltid-decision-scope-census-2026-08-12.json"
+  ],
+  "schema_version": "0.1.0-research",
+  "source_pins": {
+    "eudi-official": "db5442501ea06907e614377a20d802748e8bfddb",
+    "multipaz": "570aa2475bd5b7e437d9041bf8ff1127bcf86cfb",
+    "waltid": "f773918a3ad226ba7c0908d58941f18a3b89591d"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "android_home_set": false,
+  "android_sdk_root_set": false,
+  "architecture": "x86_64",
+  "base_image": "eclipse-temurin@sha256:55fb9bf738f5d9b4a6c01b39337e3070d3e27370dd3c478fd1d5d3cd2233c6d8",
+  "java": "openjdk version \"21.0.11\" 2026-04-21 LTS\nOpenJDK Runtime Environment Temurin-21.0.11+10 (build 21.0.11+10-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.11+10 (build 21.0.11+10-LTS, mixed mode, sharing)",
+  "kernel": "6.8.0-137-generic",
+  "os": "Linux-6.8.0-137-generic-x86_64-with-glibc2.35",
+  "python": "Python 3.10.12",
+  "sdkmanager_present": false
+}
