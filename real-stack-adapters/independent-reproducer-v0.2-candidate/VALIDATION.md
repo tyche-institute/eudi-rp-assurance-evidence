@@ -1,7 +1,7 @@
 # Validation record — Independent Reproducer Kit v0.2 candidate
 
 - **Date:** 2026-08-12
-- **State:** local candidate; not published; independent executions = 0
+- **State:** public draft candidate; not tagged or released; independent executions = 0
 
 ## Final clean run
 

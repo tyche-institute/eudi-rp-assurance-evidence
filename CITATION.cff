@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "This is an unpublished local release candidate; cite a public release when available."
+message: "This is an unpublished draft release candidate; cite a tagged public release when available."
 title: "EUDI RP Assurance Evidence"
 type: software
 version: 0.2.0-rc1

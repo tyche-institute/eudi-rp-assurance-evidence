@@ -149,7 +149,7 @@ def main() -> int:
 
     verify_privacy(actual)
     print(json.dumps({
-        "status": "PASS_LOCAL_RELEASE_CANDIDATE_V0_2_0_RC1",
+        "status": "PASS_RELEASE_CANDIDATE_V0_2_0_RC1",
         "files": len(actual),
         "decision_scope_observations": 18,
         "reference_return_observations": 12,

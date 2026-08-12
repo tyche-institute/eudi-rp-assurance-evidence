@@ -1,6 +1,6 @@
 # Independent Reproducer Kit v0.2 candidate
 
-Status: **local release candidate; not publicly released; independent executions remain zero**.
+Status: **public draft release candidate; not tagged or released; independent executions remain zero**.
 
 This kit turns the decision-scope experiment into a low-friction return path for independently
 controlled evidence. It runs two pinned JVM verifier entry points in a clean container without an

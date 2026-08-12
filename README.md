@@ -1,6 +1,6 @@
 # EUDI RP Assurance Evidence v0.2.0-rc1
 
-Status: **local research release candidate; not publicly released**.
+Status: **public draft release candidate; not tagged or released**.
 
 This packet makes relying-party decision scope and independently controlled
 reproduction first-class evidence. It extends the immutable public v0.1.2
