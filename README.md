@@ -72,7 +72,13 @@ The external build is intentionally not part of the fast verification path.
 - [ARF Topics L/M](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/blob/6373eee10b6e80225c7ce706a5ff1775fb799b22/docs/discussion-topics/l%2Bm-data-deletion-and-reporting-of-wrp-to-dpa.md)
 - [TS7 data-deletion interface](https://github.com/eu-digital-identity-wallet/eudi-doc-standards-and-technical-specifications/blob/bdc9780224bf4fb07ae7ddc11a2a6962e4536442/docs/technical-specifications/ts7-common-interface-for-data-deletion-request.md)
 
+## Upstream use
+
+- [FCAF issue #50](https://github.com/eu-digital-identity-wallet/eudi-doc-functional-conformance-assessment/issues/50) asks three bounded questions about the first RP-as-SUT case.
+- [ARF Topic L comment](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/discussions/691#discussioncomment-17986586) proposes evidence-bearing deletion-request lifecycle states.
+- [ARF Topic M comment](https://github.com/eu-digital-identity-wallet/eudi-doc-architecture-and-reference-framework/discussions/692#discussioncomment-17986587) separates user allegations, verifier facts and later DPA findings.
+- Topic I was not reposted: Tyche's earlier bounded-mandate contribution remains the canonical comment there.
+
 ## License and citation
 
 Released under the MIT License; see `LICENSE`. Citation metadata are in `CITATION.cff`.
-

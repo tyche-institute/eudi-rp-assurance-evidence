@@ -36,7 +36,10 @@ def main() -> int:
     actual = {
         path.relative_to(ROOT)
         for path in ROOT.rglob("*")
-        if path.is_file() and path.name not in {"RELEASE-SHA256SUMS"} and "__pycache__" not in path.parts
+        if path.is_file()
+        and path.name not in {"RELEASE-SHA256SUMS"}
+        and ".git" not in path.relative_to(ROOT).parts
+        and "__pycache__" not in path.relative_to(ROOT).parts
     }
     if listed != actual:
         raise SystemExit(f"FAIL: release manifest set mismatch: missing={sorted(actual-listed)}, extra={sorted(listed-actual)}")
